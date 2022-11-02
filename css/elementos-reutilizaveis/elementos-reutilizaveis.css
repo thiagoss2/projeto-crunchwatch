@@ -1,0 +1,24 @@
+/*======================= ELEMENTOS REUTILIZAVEIS ============== */
+.container-1 {
+    padding: 0 5%;
+}
+.icone-menu {
+  color: #aaa;
+  font-weight: 300;
+}
+/* vai direto para a coluna 1 */
+.col-1 {
+  grid-column: 1/1;
+}
+/*VAI DIRETO PARA A COLUNA 2 */
+.col-2 {
+  grid-column: 2/2;
+}
+.barra-rolagem::-webkit-scrollbar {
+  background-color: transparent;
+}
+.barra-rolagem::-webkit-scrollbar-thumb {
+  background-color: #9a9a9a;
+}
+.barra-rolagem::-webkit-scrollbar-track {}
+.barra-rolagem::-webkit-scrollbar-corner {}

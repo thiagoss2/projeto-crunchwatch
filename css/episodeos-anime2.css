@@ -1,0 +1,762 @@
+/*======================= ESTILOS PADROES ====================== */
+:root {
+    --cor-borda: #343434;
+    --cor-fundo-geral: #181818;
+    --cor-azul: #a9d4e2;
+    --cor-escura: #121212;
+    --cor-vermelha: #cc0000;
+    --cor-icones: #9a9a9a;
+    --cor-botao-escuro: #313131;
+    --cor-icone-teclado: #6e6e6e;
+    --cor-trasparente-botao: #373737;
+    --cor-borda-azul: #2877b3;
+    --cor-textos-fraca: #7c7c7c;
+    --cor-titulo: #9a9a9a;
+    --espaço-esquerdo: 0.25rem;
+    --espaço-direito: 0.25rem;
+    /* TAMANHO DE FONTE MOBILE */
+    /* Essa medida mantem a porporção */
+    --font-sz-1: .4rem;
+    --fonte-sz-2: .5rem;
+    --fonte-sz-3: .6rem;
+    --font-sz-4: .7rem;
+    --font-sz-5: .8rem;
+    --font-sz-5.2: .8.5rem;
+    --font-sz-6: .9rem;
+    --font-sz-7: 1.2rem;
+    --font-sz-8: 1.5rem;
+    --margin-b-5: 0.3125rem;
+    --margin-b-10: 0.625rem;
+    --margin-b-11: 0.800rem;
+    --margin-b-12: 1rem;
+    --border-booton-1: 0.0625rem;
+    --border-booton-3: 0.1875rem;
+    --border-booton-5: 0.3125rem;
+    --padding-b: .5rem;
+    --c-gap: 0.625rem;
+}
+
+body {
+    background-color: var(--cor-fundo-geral);
+    font-family: "Roboto", sans-serif;
+}
+
+i {
+    width: 16px;
+    height: 16px;
+}
+
+a {
+    display: inline-block;
+}
+
+/* TAMANHO DE FONTE DESKTOP */
+/* ALIGN ITENS CENTER : EIXO-Y */
+/*======================= ELEMENTOS REUTILIZAVEIS ============== */
+.container-1 {
+    padding: 0 5%;
+}
+
+.icone-menu {
+    color: #aaa;
+    font-weight: 300;
+}
+
+/* vai direto para a coluna 1 */
+.col-1 {
+    grid-column: 1/1;
+}
+
+/*VAI DIRETO PARA A COLUNA 2 */
+.col-2 {
+    grid-column: 2/2;
+}
+
+.barra-rolagem::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+.barra-rolagem::-webkit-scrollbar-thumb {
+    background-color: #9a9a9a;
+}
+
+.barra-rolagem::-webkit-scrollbar-track {}
+
+.barra-rolagem::-webkit-scrollbar-corner {}
+
+/* ======================== CABEÇALHO ============================ */
+header {
+    background-color: #202020;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+header i {
+    color: white;
+    font-size: 25px;
+}
+
+/* ======================== MENU ESQUERDA ================ */
+.embrulho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 0;
+}
+
+.embrulho i {
+    width: 24px;
+    height: 24px;
+}
+
+.menu-esquerda {
+    display: flex;
+    align-items: center;
+    gap: .2rem
+}
+
+.menu-esquerda__btn-yotube {
+    display: flex;
+    align-items: center;
+}
+
+.menu-esquerda__btn-yotube {}
+
+.menu-esquerda__btn-yotube i {
+    color: var(--cor-borda-azul);
+}
+
+.menu-esquerda .texto-yotube {
+    color: white;
+    text-transform: uppercase;
+    font-size: .7rem;
+    position: relative;
+    margin-left: .2rem;
+}
+
+.menu-esquerda .texto-flutuante {
+    font-size: .4rem;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: -0.375rem;
+}
+
+@media screen and (max-width:400px) {
+    .menu-esquerda .texto-yotube {
+        display: none;
+    }
+}
+
+/* ======================== MENU MEIO ================ */
+.menu-meio {
+    display: flex;
+    align-items: stretch;
+    height: 1.2rem;
+    /* corrigiu o problema */
+    display: none;
+}
+
+.menu-meio__campo-texto {
+    display: flex;
+}
+
+.menu-meio input {
+    background-color: var(--cor-fundo-geral);
+    border: 0.0625rem solid var(--cor-borda);
+    outline: none;
+    color: white;
+    font-size: .6rem;
+    font-weight: 100;
+    padding-left: var(--espaço-esquerdo);
+}
+
+.menu-meio__campo-texto {
+    position: relative;
+}
+
+.menu-meio__campo-texto i {
+    position: absolute;
+    width: .3125rem;
+    height: .31255rem;
+    right: 15px;
+    top: 19%;
+    display: none;
+    margin-right: var(--espaço-direito);
+}
+
+.menu-meio input:hover {
+    outline: 0.0625rem solid var(--cor-borda-azul);
+}
+
+.menu-meio input::placeholder {
+    font-size: .8rem;
+}
+
+.menu-meio__bt-lupa {
+    background-color: var(--cor-botao-escuro);
+    padding: .4rem .4rem;
+    border-radius: 0 0.125rem 0.125rem 0;
+}
+
+/* ======================== MENU DIREITA =============== */
+.menu-direita {
+    display: flex;
+    align-items: center;
+    gap: .5rem
+}
+
+.menu-direita__imagem img {
+    border-radius: 1.25em;
+    width: 2rem;
+    height: 2rem;
+    display: none;
+}
+
+/* ============= MENU LATERAL FIXO ==================== */
+
+.menu-lateral-fixo {
+    position: absolute;
+    top: 56.78px;
+    width: 100%;
+    background: #034284;
+    z-index: 200;
+    left: -100px;
+    overflow-y: scroll;
+    height: 100vh;
+    padding-bottom: 10rem;
+    /* display: none;   */
+    padding-top: .5rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1mm all ease-in-out;
+
+}
+
+.menu-lateral-fixo.ativo {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+}
+
+.secao-menu-lateral__lista {
+    position: relative;
+}
+
+.secao-menu-lateral__lista i {
+    position: absolute;
+    right: 0;
+    color: red;
+}
+
+.secao-menu-lateral__item-lista {
+    padding: .6rem 0;
+}
+
+.menu-lateral__dropdown {
+    padding-left: .9rem;
+    border-top: 2px solid #fff;
+}
+
+.dropdown__item-lista {
+    padding: .6rem;
+}
+
+.menu-lateral-fixo .menu-lateral__btn-dropdown {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+
+}
+
+.menu-lateral__btn-dropdown {}
+
+.menu-lateral__btn-dropdown-titulo {
+    color: red;
+}
+
+.menu-lateral-fixo a, p {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-lateral-fixo i {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* =================== CONTEUDO PRINCIPAL ==================================== */
+
+
+/* ===================== CONTEUDO PRINCIPAL ============================= */
+main {
+    color: white;
+    margin-top: 56.78px;
+    background-color: var(--cor-fundo-geral);
+
+}
+
+main i {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.episodeos-descricao__titulo {
+    color: white;
+}
+
+.banner-img {
+    width: 100%;
+    margin-bottom: var(--margin-b-12);
+
+}
+
+.banner-img img {
+    width: inherit;
+}
+
+.episodeos-descricao__titulo {
+    font-size: var(--font-sz-8);
+    margin-bottom: var(--margin-b-10);
+}
+
+.episodeos-descricao__subtitulo {
+    font-size: var(--font-sz-6);
+    color: var(--cor-borda-azul);
+    font-weight: bold;
+    margin-bottom: var(--margin-b-12);
+}
+
+.episodeos-descricao__avaliacao {
+    display: flex;
+    gap: 15px;
+}
+
+.avaliacao_btn {
+    font-size: 30px;
+    margin-bottom: var(--margin-b-10);
+}
+
+.avaliacao_btn i {
+    color: var(--cor-borda-azul);
+}
+
+.episodeos-descricao__media {
+    display: flex;
+    font-size: var(--font-sz-6);
+    gap: 5px;
+    margin-bottom: var(--margin-b-11);
+}
+
+.resenhas-numero {
+    border-left: 2px solid var(--cor-vermelha);
+    padding-left: 6px;
+}
+
+.episodeos-descricao__marcador {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--margin-b-11);
+    gap: 10px;
+
+}
+
+.episodeos-descricao__marcador:hover {
+    text-decoration: none;
+}
+
+.episodeos-descricao__marcador button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--cor-vermelha);
+    padding: 10px 15px;
+}
+
+.episodeos-descricao__marcador .btn-assistir {
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.episodeos-descricao__marcador .btn-marcador {
+    background-color: transparent;
+    border: 2px solid var(--cor-vermelha);
+}
+
+.episodeos__adicionar .btn-adicionar {
+    margin-bottom: var(--margin-b-11);
+}
+
+.episodeos__adicionar .btn-adicionar {
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    margin-bottom: var(--margin-b-12);
+    color: var(--cor-vermelha);
+    font-weight: 500;
+}
+
+.episodeos__adicionar .btn-adicionar i {
+    color: var(--cor-vermelha);
+}
+
+.episodeos-descricao-legenda {
+    line-height: normal;
+    font-size: var(--font-sz-6);
+    margin-bottom: 2rem;
+
+}
+
+.episodeos-descricao__distribuidora {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--margin-b-10);
+    padding-bottom: 1rem;
+}
+
+.conteudo-episodeos-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--margin-b-12);
+}
+
+.episodeos__btn-dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo-episodeos-topo i {
+    font-size: 20px;
+}
+
+.dropdown-btn__texto {
+    color: white;
+    padding-left: 5px;
+}
+
+.episodeos__btn-dropdown .bx-down-arrow {
+    align-self: baseline;
+    font-size: 15px;
+
+}
+
+.episodeos__btn-menu .bx-menu-alt-left {
+    font-size: 25px;
+    color: var(--cor-vermelha);
+}
+
+.episodeos-item {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.episodeos-item__lista {
+    margin-bottom: var(--margin-b-10);
+}
+
+.episodeos__link {
+    display: block;
+}
+
+.episodeos__cartao {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ========  corrigir aqui ============ */
+.episodeos__bloco-img {
+    width: 180px;
+    height: 85px;
+}
+
+.episodeos__bloco-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ========  corrigir aqui ============ */
+
+
+.episodeos__catao-corpo {
+    width: 100%;
+}
+
+.episodeos__cartao-subtitulo {
+    margin-bottom: var(--margin-b-10);
+}
+
+.episodeos__cartao-dublagem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #6e6e6e;
+    font-weight: bold;
+    font-size: var(--font-sz-5);
+
+}
+
+.episodeos__cartao-icone-contador {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.episodeos__cartao-subtitulo {
+    text-transform: uppercase;
+    color: #6e6e6e;
+    font-weight: bold;
+    font-size: var(--font-sz-5);
+}
+
+.episodeos__cartao-titulo {
+    margin-bottom: var(--margin-b-10);
+    text-transform: uppercase;
+    font-size: var(--font-sz-6);
+    font-weight: bold;
+}
+
+
+
+.episodeos__cartao-dublagem-texto {
+    color: #6e6e6e;
+    font-weight: bold;
+}
+
+.episodeos__cartao-icone-contador {
+    color: white;
+    font-weight: bold;
+}
+
+
+.secao-anterior-proxima {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    font-size: var(--font-sz-6);
+    text-transform: uppercase;
+    color: #6e6e6e;
+    border-top: 2px solid var(--cor-vermelha);
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.secao-anterior-proxima i {
+    color: #6e6e6e;
+    font-size: 20px;
+    align-items: center;
+}
+
+.secao-anterior-proxima .anterior {
+    color: var(--cor-vermelha);
+    display: flex;
+    align-items: center;
+
+}
+
+.secao-anterior-proxima .anterior i {
+    align-self: baseline;
+    color: var(--cor-vermelha);
+
+}
+
+.secao-anterior-proxima .proxima {
+    color: var(--cor-vermelha);
+    display: flex;
+    align-items: center;
+}
+
+.secao-anterior-proxima .proxima i {
+    align-self: baseline;
+    color: var(--cor-vermelha);
+}
+
+.conteudo__episodeos {
+    margin-bottom: 1.8rem;
+}
+
+
+/*================== BLOCO COMENTARIOS ================== */
+
+.comentarios {
+    background-color: var(--cor-fundo-geral);
+}
+
+.nota-media {
+    margin-bottom: 1.2rem;
+}
+
+.nota-media__titulo {
+    font-size: 1rem;
+}
+
+.nota-media__btn {
+    color: white;
+}
+
+.nota-media__nota {
+    font-size: 1.2rem;
+}
+
+.nota-media__btn .bx-down-arrow {
+    font-size: .8rem;
+}
+
+.resenhas {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resenhas__texto {
+    font-size: 20px
+}
+
+.resenhas__conjunto-btn {
+    font-size: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+.resenhas__conjunto-btn .resenhas__btn {
+    color: #9a9a9a;
+}
+
+.publicacoes {
+    margin-bottom: 5rem;
+}
+
+.publicacoes__card {
+    margin-bottom: 1.2rem;
+    background-color: var(--cor-botao-escuro);
+    padding: 10px
+}
+
+.publicacoes__card-topo {
+    display: flex;
+    gap: 10px;
+    margin-bottom: var(--margin-b-10);
+}
+
+.publicacoes__card-bloco-img img {
+    border-radius: 20px;
+    width: 18px;
+    height: 18px;
+}
+
+.publicacoes__card-legenda {
+    font-size: 14px;
+}
+
+.publicacoes__card-legenda i {
+    color: #2877b3;
+    font-weight: bold;
+}
+
+.publicacoes__card-perfil {
+    color: #2877b3;
+    font-weight: bold;
+}
+
+.publicacoes__card-meio {
+    display: flex;
+    gap: 8px;
+    margin-bottom: var(--margin-b-10);
+}
+
+.publicacoes__card-meio .publicacoes__card-meio-btn {
+    font-size: 30px;
+}
+
+.publicacoes__card-meio .publicacoes__card-meio-btn i {
+    color: var(--cor-borda-azul);
+
+}
+
+.publicacoes__card-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.publicacoes__card-rodape-btn {
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: var(--cor-vermelha);
+    border: none;
+}
+
+.publicacoes__card-legenda {
+    line-height: normal;
+}
+
+.publicacoes__card-rodape-texto--modificado {
+    font-size: var(--font-sz-5);
+    line-height: 1.2;
+    height: 80px;
+    overflow-y: scroll;
+    margin-bottom: 2rem;
+}
+
+.publicacoes__card-rodape-texto--escuro {
+    font-size: var(--font-sz-5);
+    color: #9a9a9a;
+    font-weight: bold;
+    margin-bottom: var(--margin-b-11);
+    line-height: normal;
+}
+
+.publicacoes__card-rodape-btn--modificado {
+    width: auto;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.btn-sim {
+    color: var(--cor-borda-azul);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.btn-nao {
+    color: var(--cor-borda-azul);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.escreva-comentario__btn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.escreva-comentario__legenda {
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: var(--cor-vermelha);
+    border: none;
+}
+
+

@@ -1,0 +1,34 @@
+/* ======== BANER ================ */
+.banner {
+    /* height: 45vh;   */
+    margin-bottom: 0.9375rem;
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+    margin: 0;
+    background: url(../img/naruto-banner2.jpeg) no-repeat;
+    background-size: 0 12.5rem;
+    background-position: 0 -3.125rem;
+    display: none;
+  }
+  .banner__titulo {
+    margin-bottom: 0.5rem;
+    margin-left: 1.666rem;
+    font-weight: bold;
+    color: #000;
+    font-size: 2rem;
+    text-shadow: 0 0 0.8333rem #2877b3;
+  }
+  .banner__btn-bloco {
+    background-color: #2877b3;
+    padding: .3125rem 0.625rem;
+    cursor: pointer;
+    margin-bottom: 0.625rem;
+    margin-left: 0.625rem;
+  }
+  .banner__btn-bloco i {
+    color: white;
+  }
+  .banner-btn-texto {
+    color: white;
+  }

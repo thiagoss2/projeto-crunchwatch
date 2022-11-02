@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/testando-grid.css">
+    <!-- ICONE YOTUBE -->
+    <link rel="icon" href="img/icone-yotube.ico">
+
+
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- BOX ICONS -->
+    <link rel="stylesheet" href="boxicons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- BOOTSTRAP -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Episodeos Anime</title>
+
+    <!-- ARQUIVO DE ESTILOS -->
+    <link rel="stylesheet" href="css/episodeos-anime2.css">
+
+    <!-- BARRA INFERIROR FIXA-->
+    <link rel="stylesheet" href="css/barra-inferior/barra-inferior-fixa.css">
+
+    <!-- RODAPE -->
+    <link rel="stylesheet" href="css/rodape/rodape.css">
+
+
+</head>
+<!--  1 - A ALTURA DO CONTAINER É O SEU CONTEUDO 
+      2 - PODEMOS DEFINIR UMA ALTURA FIXA
+      3 - PORCENTAGEM EM ALTURA NÃO FUNCIONA
+      4 - O POSITION TRABALHA COM A DIREÇÃO INVERSA
+-->
+
+<body>
+    <!-- =================== O CONTEUDO VAI SER A ALTURA ====================== -->
+    <header>
+        <div class="container-1">
+            <div class="embrulho">
+                <!-- =================== MENU ESQUERDA =========================== -->
+                <div class="menu-esquerda">
+                    <button class="menu-esquerda__btn-hamburger" js-btn-hamburger>
+                        <i class='bx bx-menu'></i>
+                    </button>
+                    <button class="menu-esquerda__btn-yotube ">
+                        <i class='bx bxs-videos'></i><span class="texto-yotube">Vid-Tube<span
+                                class="texto-flutuante">br</span></span>
+                    </button>
+                </div>
+                <!-- =================== MENU MEIO =============================== -->
+                <div class="menu-meio">
+                    <form action="" class="menu-meio__campo-texto">
+                        <input type="text" placeholder="Pesquisar">
+                        <i class='bx bxs-keyboard menu-meio__teclado'></i>
+                    </form>
+                    <button class="menu-meio__bt-lupa">
+                        <i class='bx bx-search'></i>
+                    </button>
+                </div>
+                <!-- =================== MENU DIREITA ============================ -->
+                <div class="menu-direita">
+                    <button class="menu-direita__notificacao">
+                        <i class='bx bx-search'></i>
+                    </button>
+                    <div class="menu-direita__imagem">
+                        <img src="img/avatar.jpg" width="15" height="15" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- =================================== MENU LATERAL FIXO ============================================== -->
+    <div class="menu-lateral-fixo " js-menu-lateral-fixo>
+        <div class="container-1">
+            <section class="secao-menu-lateral">
+                <ul class="secao-menu-lateral__lista">
+                    <li class="secao-menu-lateral__item-lista"><a class="secao-menu-lateral__link " href="">Navegar</a>
+                        <i class='bx bx-x' js-menu-lateral-fixo-btn-x></i>
+                    </li>
+                    <li class="secao-menu-lateral__item-lista"><a class="secao-menu-lateral__link" href="">Novidades</a>
+                    </li>
+                    <li class="secao-menu-lateral__item-lista"><a class="secao-menu-lateral__link" href="">A-Z</a></li>
+                    <li class="secao-menu-lateral__item-lista"><a class="secao-menu-lateral__link" href="">Simulcats da
+                            Temporada</a></li>
+                    <li class="secao-menu-lateral__item-lista"><a class="secao-menu-lateral__link" href="">Calendario de
+                            Lançamentos</a></li>
+                    <li class="secao-menu-lateral__item-lista">
+                        <button class="menu-lateral__btn-dropdown">
+                            <p class="menu-lateral__btn-dropdown-titulo">Generos</p>
+                            <i class='bx bx-chevron-down'></i>
+                        </button>
+                        <!--========================= DROPDOWN ========================= -->
+                        <ul class="menu-lateral__dropdown">
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Açao</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Aventura</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Comedia</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Drama</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Fantasia</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Musica</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Romance</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Ficção Cientifica</a>
+                            </li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Seinen</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Shoujo</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Shounen</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Slice-of-life</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Esportes</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Sobrenatural</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Suspence</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="secao-menu-lateral__lista">
+                    <li class="secao-menu-lateral__item-lista"><a class="secao-menu-lateral__link" href="">Mangá</a>
+                    </li>
+                    <li class="secao-menu-lateral__item-lista"><a class="secao-menu-lateral__link" href="">Jogos</a>
+                    </li>
+                    <li class="secao-menu-lateral__item-lista">
+                        <button class="menu-lateral__btn-dropdown">
+                            <p class="menu-lateral__btn-dropdown-titulo">Noticias</p>
+                            <i class='bx bx-chevron-down'></i>
+                        </button>
+                        <!--========================= DROPDOWN ========================= -->
+                        <ul class="menu-lateral__dropdown">
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Açao</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Aventura</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Comedia</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Drama</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Fantasia</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Musica</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Romance</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Ficção Cientifica</a>
+                            </li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Seinen</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Shoujo</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Shounen</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Slice-of-life</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Esportes</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Sobrenatural</a></li>
+                            <li class="dropdown__item-lista"><a href="" class="dropdown__link">Suspence</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <!-- ============================= CONTEUDO PRINCIPAL ===============================================-->
+    <main>
+        <div class="banner-img">
+            <img src="img/tokyo-revengers.jpeg" alt="" width="280" height="322">
+        </div>
+        <div class="container-1">
+            <div class="conteudo-principal">
+                <section class="episodeos-descricao">
+                    <h2 class="episodeos-descricao__titulo">Tokyo Revengers</h2>
+                    <p class="episodeos-descricao__subtitulo"><span class="numero__videos">146 Videos </span>Dublado</p>
+                    <!-- ESTRELAS AVALIAÇÃO -->
+                    <div class="episodeos-descricao__avaliacao">
+                        <button class="avaliacao_btn">
+                            <i class='bx bx-star'></i>
+                        </button>
+                        <button class="avaliacao_btn">
+                            <i class='bx bx-star'></i>
+                        </button>
+                        <button class="avaliacao_btn">
+                            <i class='bx bx-star'></i>
+                        </button>
+                        <button class="avaliacao_btn">
+                            <i class='bx bx-star'></i>
+                        </button>
+                        <button class="avaliacao_btn">
+                            <i class='bx bx-star'></i>
+                        </button>
+                    </div>
+                    <div class="episodeos-descricao__media">
+                        <button class="media-btn">
+                            <p class="nota_media">Nota media <span class="visualizacoes">(10.3k) <i
+                                        class='bx bx-down-arrow'></i></span></p>
+                        </button>
+                        <p class="resenhas"><span class="resenhas-numero">16 <a class="resenhas__link"
+                                    href="">Resenhas</a></span>
+                        </p>
+                        <!-- DROPDOWN AQUI-->
+                    </div>
+                    <div class="episodeos-descricao__btn-assitir">
+                        <div class="">
+                            <a class="episodeos-descricao__marcador" href="video.html">
+                                <button class="btn-assistir">
+                                    <p class="btn__assistir-titulo"><i class='bx bx-right-arrow'></i>
+                                        começar a assistir</p>
+                                </button>
+                                <button class="btn-marcador">
+                                    <i class='bx bx-bookmarks'></i>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="episodeos__adicionar">
+                            <button class="btn-adicionar">
+                                <i class='bx bx-plus'></i> adicionar a sua lista
+                            </button>
+                            <p class="episodeos-descricao-legenda">
+                                Takemichi Hanagaki é um desempregado que sobrevive de bicos e está na fossa. Ele
+                                descobriu que Hinata
+                                Tachibana, sua primeira e última namorada, com quem namorou no fundamental, foi morta
+                                pela impiedosa
+                                Gangue Manji de Tóquio. No dia seguinte à notícia, ele está na beira da plataforma do
+                                trem e é empurrado
+                                pela multidão. Ele fecha os olhos se preparando para morrer, mas ao abrir, ele voltou no
+                                tempo para
+                                quando tinha 12 anos de idade. Agora que ele está na melhor época de sua vida, Takemichi
+                                decide se
+                                vingar de sua vida, salvando sua namorada e parando de fugir de si mesmo.
+                            </p>
+                        </div>
+                        <div class="episodeos-descricao__distribuidora">
+                            <p class="distribuidora__texto">Distribuidora</p>
+                            <p class="distribuidora__empresa">Poly Cainon Inc</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="conteudo__episodeos">
+                    <div class="conteudo-episodeos-topo">
+                        <button class="episodeos__btn-dropdown">
+                            <i class='bx bx-down-arrow'></i><span class="dropdown-btn__texto">S1 - TOKYO Revengers
+                                portuges</span>
+                        </button>
+
+                        <!-- CRIAR DROPDOWN -->
+                        <button class="episodeos__btn-menu">
+                            <i class='bx bx-menu-alt-left'></i>
+                        </button>
+                    </div>
+                    <div class="conteudo-episodeos-meio">
+                        <ul class="episodeos-item">
+                            <!-- ========================= CARTAO 1 =========================================== -->
+                            <li class="episodeos-item__lista">
+                                <a class="episodeos__link" href="video.html">
+                                    <div class="episodeos__cartao">
+                                        <figure class="episodeos__bloco-img">
+                                            <img src="poster-video/poster-ep1-tojyo-revengers.jpg" alt="">
+                                        </figure>
+                                        <div class="episodeos__catao-corpo">
+                                            <p class="episodeos__cartao-subtitulo">Tokyo Revengers</p>
+                                            <p class="episodeos__cartao-titulo">EP 1 - renascer</p>
+                                            <div class="episodeos__cartao-dublagem">
+                                                <p class="episodeos__cartao-dublagem-texto">Dublado</p>
+                                                <p class="episodeos__cartao-icone-contador"><span
+                                                        class="contador">51</span>
+                                                    <i class='bx bx-message'></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- ========================= CARTAO 2 =========================================== -->
+                            <li class="episodeos-item__lista">
+                                <a class="episodeos__link" href="">
+                                    <div class="episodeos__cartao">
+                                        <figure class="episodeos__bloco-img">
+                                            <img src="/img/tokyo-revengers.jpeg" alt="">
+                                        </figure>
+                                        <div class="episodeos__catao-corpo">
+                                            <p class="episodeos__cartao-subtitulo">Tokyo Revengers</p>
+                                            <p class="episodeos__cartao-titulo">s1 - e1 renascer</p>
+                                            <div class="episodeos__cartao-dublagem">
+                                                <p class="episodeos__cartao-dublagem-texto">Dublado</p>
+                                                <p class="episodeos__cartao-icone-contador"><span
+                                                        class="contador">51</span>
+                                                    <i class='bx bx-message'></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- ========================= CARTAO 3 =========================================== -->
+                            <li class="episodeos-item__lista">
+                                <a class="episodeos__link" href="">
+                                    <div class="episodeos__cartao">
+                                        <figure class="episodeos__bloco-img">
+                                            <img src="/img/tokyo-revengers.jpeg" alt="">
+                                        </figure>
+                                        <div class="episodeos__catao-corpo">
+                                            <p class="episodeos__cartao-subtitulo">Tokyo Revengers</p>
+                                            <p class="episodeos__cartao-titulo">s1 - e1 renascer</p>
+                                            <div class="episodeos__cartao-dublagem">
+                                                <p class="episodeos__cartao-dublagem-texto">Dublado</p>
+                                                <p class="episodeos__cartao-icone-contador"><span
+                                                        class="contador">51</span>
+                                                    <i class='bx bx-message'></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- ========================= CARTAO 4 =========================================== -->
+                            <li class="episodeos-item__lista">
+                                <a class="episodeos__link" href="">
+                                    <div class="episodeos__cartao">
+                                        <figure class="episodeos__bloco-img">
+                                            <img src="/img/tokyo-revengers.jpeg" alt="">
+                                        </figure>
+                                        <div class="episodeos__catao-corpo">
+                                            <p class="episodeos__cartao-subtitulo">Tokyo Revengers</p>
+                                            <p class="episodeos__cartao-titulo">s1 - e1 renascer</p>
+                                            <div class="episodeos__cartao-dublagem">
+                                                <p class="episodeos__cartao-dublagem-texto">Dublado</p>
+                                                <p class="episodeos__cartao-icone-contador"><span
+                                                        class="contador">51</span>
+                                                    <i class='bx bx-message'></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!-- ========================= CARTAO 5 =========================================== -->
+                            <li class="episodeos-item__lista">
+                                <a class="episodeos__link" href="">
+                                    <div class="episodeos__cartao">
+                                        <figure class="episodeos__bloco-img">
+                                            <img src="/img/tokyo-revengers.jpeg" alt="">
+                                        </figure>
+                                        <div class="episodeos__catao-corpo">
+                                            <p class="episodeos__cartao-subtitulo">Tokyo Revengers</p>
+                                            <p class="episodeos__cartao-titulo">s1 - e1 renascer</p>
+                                            <div class="episodeos__cartao-dublagem">
+                                                <p class="episodeos__cartao-dublagem-texto">Dublado</p>
+                                                <p class="episodeos__cartao-icone-contador"><span
+                                                        class="contador">51</span>
+                                                    <i class='bx bx-message'></i>
+                                                </p>
+                                            </div>/
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <!--================================ BOTOES ANTERIOR PROXIMO =========================-->
+                            <div class="secao-anterior-proxima">
+                                <p class="anterior"><i class='bx bx-chevron-left'></i>anterior</p>
+                                <p class="proxima">Proxima <i class='bx bx-chevron-right'></i></p>
+                            </div>
+                        </ul>
+                    </div>
+                </section>
+                <!-- =================================  BLOCO COMENTARIOS ==================================================-->
+                <section class="comentarios">
+                    <div class="nota-media">
+                        <span class="nota-media__titulo" aria-label="Nota Media">Nota media</span>
+                        <button class="nota-media__btn">
+                            <span class="nota-media__nota" aria-label="nota">4.9</span> <i class='bx bx-star'></i><span
+                                class="nota-media__curtidas" aria-label="curtidas">128</span><span
+                                class="nota-media__unidade" aria-label="likes">k</span>
+                            <i class='bx bx-down-arrow'></i>
+                        </button>
+                        <div class="dropdown-nota-media">
+                            <!-- CONTINUAR DROPDOWN -->
+                        </div>
+                    </div>
+                    <div class="resenhas">
+                        <p class="resenhas__texto">
+                            <span class="resenhas__numero">7 </span>resenhas
+                        </p>
+                        <div class="resenhas__conjunto-btn">
+                            <button class="resenhas__btn">
+                                <i class='bx bx-menu-alt-left'></i>
+                            </button>
+                            <button class="resenhas__btn">
+                                <i class='bx bx-slider'></i>
+                            </button>
+                        </div>
+                        <!-- CRIAR DROPDOWN 1 -->
+                        <!-- CRIAR DROPDOWN 2 -->
+                    </div>
+                    <!--========== PUBLICAÇOES CARD  ========== -->
+                    <div class="publicacoes">
+                        <div class="publicacoes__card">
+                            <div class="publicacoes__card-topo">
+                                <figure class="publicacoes__card-bloco-img">
+                                    <img src="img/avatar.jpg" alt="">
+                                </figure>
+                                <div class="publicacoes__card-descricao">
+                                    <p class="publicacoes__card-legenda">Publicar resenha como
+                                        <i class='bx bx-crown'></i>
+                                        <span class="publicacoes__card-perfil">Thiago-Silva</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="publicacoes__card-meio">
+                                <button class="publicacoes__card-meio-btn">
+                                    <i class='bx bx-star'></i>
+                                </button>
+                                <button class="publicacoes__card-meio-btn">
+                                    <i class='bx bx-star'></i>
+                                </button>
+                                <button class="publicacoes__card-meio-btn">
+                                    <i class='bx bx-star'></i>
+                                </button>
+                                <button class="publicacoes__card-meio-btn">
+                                    <i class='bx bx-star'></i>
+                                </button>
+                                <button class="publicacoes__card-meio-btn">
+                                    <i class='bx bx-star'></i>
+                                </button>
+                            </div>
+                            <div class="publicacoes__card-rodape">
+                                <button class="publicacoes__card-rodape-btn">
+                                    <p class="publicacoes__card-rodape-texto">adicionar Resenha</p>
+                                </button>
+                            </div>
+                        </div>
+                        <!--========== PUBLICAÇOES CARD PERFIL ========== -->
+                        <div class="publicacoes__card publicacoes__card--perfil">
+                            <div class="publicacoes__card-topo">
+                                <figure class="publicacoes__card-bloco-img">
+                                    <img src="img/avatar.jpg" alt="">
+                                </figure>
+                                <div class="publicacoes__card-descricao">
+                                    <p class="publicacoes__card-legenda">
+                                        <span class="publicacoes__card-perfil">Thiago-Silva</span>
+                                        ( <span class="total-resenhas">23 </span>resenhas )
+                                        <span class="total-dia">04 </span> de
+                                        <span class="total-mes">outubro</span> de
+                                        <span class="total-ano">2022</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="publicacoes__card-meio">
+                                <button class="publicacoes__card-meio-btn">
+                                    <i class='bx bx-star'></i>
+                                </button>
+                                <button class="publicacoes__card-meio-btn">
+                                    <i class='bx bx-star'></i>
+                                </button>
+                                <button class="publicacoes__card-meio-btn">
+                                    <i class='bx bx-star'></i>
+                                </button>
+                                <button class="publicacoes__card-meio-btn">
+                                    <i class='bx bx-star'></i>
+                                </button>
+                                <button class="publicacoes__card-meio-btn">
+                                    <i class='bx bx-star'></i>
+                                </button>
+                            </div>
+                            <div class="publicacoes__card-rodape--modificado">
+                                <p class="publicacoes__card-rodape-texto publicacoes__card-rodape-texto--modificado">O
+                                    primeiro episódio foi bom e com certeza me fez ficar
+                                    ansioso pro segundo apesar de que essas histórias de ninja ja ta bem manjada, sendo
+                                    um anime
+                                    original eu não tenho como saber o que vai acontecer a não ser assistindo. Por ele
+                                    ser do mesmo
+                                    estúdio do Re:Creators eu vou dar uma chance e ver no que da.
+                                </p>
+                                <p class="publicacoes__card-rodape-texto publicacoes__card-rodape-texto--escuro">
+                                    <span class="publicacoes__card-rodape__numero-pessoas">14 </span>de <span
+                                        class="publicacoes__card-rodape__numero-pessoas">17 </span>pessoas acharam isto
+                                    util <br>
+                                    Esta resenha foi util? <button class="btn-sim">Sim</button>| <button
+                                        class="btn-nao">Não</button>
+                                </p>
+                                <div class="publicacoes__card-rodape-compartilhar-bloco">
+                                    <button
+                                        class="publicacoes__card-rodape-btn publicacoes__card-rodape-btn--modificado ">
+                                        <i class='bx bx-flag'></i>
+                                    </button>
+                                    <button
+                                        class="publicacoes__card-rodape-btn  publicacoes__card-rodape-btn--modificado ">
+                                        <i class='bx bx-share-alt'></i>
+                                    </button>
+                                </div>
+
+                                <div class="escreva-comentario">
+                                    <button class="escreva-comentario__btn">
+                                        <p class="escreva-comentario__legenda">Escreva uma resenha</p>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- =============================================== RODAPE  ====================================================== -->
+    <footer class="rodape">
+        <div class="container-1">
+            <section class="rodape-secao">
+                <h3 class="rodape-secao__titulo">Navegação</h3>
+                <ul class="lista-animes">
+                    <li class="lista__item"><a href="" class="lista__link">Series Populares</a></li>
+                    <li class="lista__item"><a href="" class="lista__link">Series em Simulcats</a></li>
+                    <li class="lista__item"><a href="" class="lista__link">Ler Manga</a></li>
+                    <li class="lista__item"><a href="" class="lista__link">Calendario de Lançamentos</a></li>
+                    <li class="lista__item"><a href="" class="lista__link">Noticias</a></li>
+                    <li class="lista__item"><a href="" class="lista__link">Forum</a></li>
+                    <li class="lista__item"><a href="" class="lista__link">Jogos</a></li>
+                </ul>
+            </section>
+            <section class="rodape-secao">
+                <h3 class="rodape-secao__titulo">Contate-nos</h3>
+                <ul class="lista-animes">
+                    <li class="lista__item"><a href="" class="lista__link"><i class='bx bx-video'></i> Yotube</a></li>
+                    <li class="lista__item"><a href="" class="lista__link"><i class='bx bxl-facebook'></i> Facebook</a>
+                    </li>
+                    <li class="lista__item"><a href="" class="lista__link"><i class='bx bxl-twitter'></i> Twitter</a>
+                    </li>
+                    <li class="lista__item"><a href="" class="lista__link"><i class='bx bxl-instagram'></i>
+                            Instagram</a></li>
+                </ul>
+            </section>
+
+            <section class="rodape-secao">
+                <h3 class="rodape-secao__titulo">Vide Tube</h3>
+                <ul class="lista-animes">
+                    <li class="lista__item"><a href="" class="lista__link">Sobre</a></li>
+                    <li class="lista__item"><a href="" class="lista__link">Ajuda/FAQ</a></li>
+                    <li class="lista__item"><a href="" class="lista__link">Termos de Uso</a></li>
+                    <li class="lista__item"><a href="" class="lista__link">Politica de Privacidade</a></li>
+                    <li class="lista__item"><a href="" class="lista__link">Ferramenta de Cookies</a></li>
+                    <li class="lista__item"><a href="" class="lista__link">Solicitaçoes de Imprensa</a></li>
+                    <li class="lista__item"><a href="" class="lista__link">Baixe o App</a></li>
+                    <li class="lista__item"><a href="" class="lista__link">Resgatar Código</a></li>
+                    <li class="lista__item"><a href="" class="lista__link">Vagas</a></li>
+                </ul>
+
+            </section>
+
+            <section class="rodape-secao">
+                <h3 class="rodape-secao__titulo">&COPY; Ellation, LLC</h3>
+                <button class="rodape-secao__btn-caixa">
+                    <p class="rodape-secao__btn-texto">portugues(brasil)</p>
+                </button>
+                <!-- position-fixed -->
+                <div class="dropdown-idiomas  ">
+                    <div class="dropdown-topo">
+                        <h2 class="dropdown-topo__titulo"> idioma</h2>
+                        <div class="dropdown-topo__btn-x-caixa">
+                            <i class='bx bx-x'></i>
+                        </div>
+                    </div>
+                    <ul class="dropdown-idiomas__lista">
+                        <li class="dropdown-idiomas__item-lista"><a href="" class="dropdown-idiomas__link">Deutsch</a>
+                        </li>
+                        <li class="dropdown-idiomas__item-lista"><a href=""
+                                class="dropdown-idiomas__link">English(US)</a></li>
+                        <li class="dropdown-idiomas__item-lista"><a href="" class="dropdown-idiomas__link">Espanhol</a>
+                        </li>
+                        <li class="dropdown-idiomas__item-lista"><a href=""
+                                class="dropdown-idiomas__link">Espanhol(Espana)</a></li>
+                        <li class="dropdown-idiomas__item-lista"><a href=""
+                                class="dropdown-idiomas__link">Frances(France)</a></li>
+                        <li class="dropdown-idiomas__item-lista"><a href="" class="dropdown-idiomas__link">Italiano</a>
+                        </li>
+                        <li class="dropdown-idiomas__item-lista"><a href=""
+                                class="dropdown-idiomas__link">Portuges(Brasil)</a></li>
+                        <li class="dropdown-idiomas__item-lista"><a href=""
+                                class="dropdown-idiomas__link">Portugês(Portugal)</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+    </footer>
+
+    <!-- ============================ BARRA INFERIOR FIXA ============================ -->
+    <div class="barra-inferior-fixa">
+        <div class="container-1">
+            <ul class="barra-inferiror__lista">
+                <li class="barra-inferior__item-lista">
+                    <a href="index.html" class="barra-inferior__link">
+                        <button class="barra-inferior__btn-inicio-bloco">
+                            <div> <i class='bx bx-home-alt-2'></i></div>
+                            <p class="barra-inferior__btn-texto">Inicio</p>
+                        </button>
+                    </a>
+                </li>
+                <li class="barra-inferior__item-lista">
+                    <a href="" class="barra-inferior__link">
+                        <button class="barra-inferior__btn-inicio-bloco">
+                            <i class='bx bx-copy-alt'></i>
+                            <p class="barra-inferior__btn-texto">Listas</p>
+                        </button>
+                    </a>
+                </li>
+                <li class="barra-inferior__item-lista">
+                    <a href="" class="barra-inferior__link">
+                        <button class="barra-inferior__btn-inicio-bloco">
+                            <i class='bx bx-book'></i>
+                            <p class="barra-inferior__btn-texto">Catalogo</p>
+                        </button>
+                    </a>
+                </li>
+                <li class="barra-inferior__item-lista">
+                    <a href="" class="barra-inferior__link">
+                        <button class="barra-inferior__btn-inicio-bloco">
+                            <i class='bx bxs-star-half'></i>
+                            <p class="barra-inferior__btn-texto">Simulcats</p>
+                        </button>
+                    </a>
+                </li>
+                <li class="barra-inferior__item-lista oculto">
+                    <a href="" class="barra-inferior__link">
+                        <button class="barra-inferior__btn-inicio-bloco">
+                            <img src="img/avatar.jpg" width="16" height="16" alt="">
+                            <p class="barra-inferior__btn-texto">Conta</p>
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- BOX ICONS -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- BOOTSTRAP -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <script src="/js/index.js">
+
+    </script>
+</body>
+
+</html>

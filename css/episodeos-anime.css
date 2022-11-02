@@ -1,0 +1,253 @@
+
+/*======================= ESTILOS PADROES ====================== */
+:root {
+  --cor-borda: #343434;
+  --cor-fundo-geral: #181818;
+  --cor-azul: #a9d4e2;
+  --cor-escura: #121212;
+  --cor-vermelha: #cc0000;
+  --cor-icones: #9a9a9a;
+  --cor-botao-escuro: #313131;
+  --cor-icone-teclado: #6e6e6e;
+  --cor-trasparente-botao: #373737;
+  --cor-borda-azul: #2877b3;
+  --cor-textos-fraca: #7c7c7c;
+  --cor-titulo: #9a9a9a;
+  --espaço-esquerdo: 0.25rem;
+  --espaço-direito: 0.25rem;
+  /* TAMANHO DE FONTE MOBILE */
+  /* Essa medida mantem a porporção */
+  --font-sz-1: .4rem;
+  --fonte-sz-2: .5rem;
+  --fonte-sz-3: .6rem;
+  --font-sz-4: .7rem;
+  --font-sz-5: .8rem;
+  --font-sz-6: .9rem;
+  --font-sz-7: 1.2rem;
+  --font-sz-8: 1.5rem;
+  --margin-b-5: 0.3125rem;
+  --margin-b-10: 0.625rem;
+  --margin-b-11:0.800rem;
+  --margin-b-12:1rem;
+  --border-booton-1: 0.0625rem;
+  --border-booton-3: 0.1875rem;
+  --border-booton-5: 0.3125rem;
+  --padding-b: .5rem;
+  --c-gap: 0.625rem;
+}
+
+
+/* TAMANHO DE FONTE DESKTOP */
+/* ALIGN ITENS CENTER : EIXO-Y */
+/*======================= ELEMENTOS REUTILIZAVEIS ============== */
+.container-1 {
+    padding: 0 5%;
+}
+.icone-menu {
+  color: #aaa;
+  font-weight: 300;
+}
+/* vai direto para a coluna 1 */
+.col-1 {
+  grid-column: 1/1;
+}
+/*VAI DIRETO PARA A COLUNA 2 */
+.col-2 {
+  grid-column: 2/2;
+}
+.barra-rolagem::-webkit-scrollbar {
+  background-color: transparent;
+}
+.barra-rolagem::-webkit-scrollbar-thumb {
+  background-color: #9a9a9a;
+}
+.barra-rolagem::-webkit-scrollbar-track {}
+.barra-rolagem::-webkit-scrollbar-corner {}
+/* ======================== CABEÇALHO ============================ */
+header {
+  background-color: #202020;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+}
+header i {
+    color: white;
+}
+/* ======================== MENU ESQUERDA ================ */
+.embrulho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 0 ;
+}
+.menu-esquerda {
+  display: flex;
+  align-items: center;
+  gap: .2rem
+}
+.menu-esquerda__btn-yotube {
+  display: flex;
+  align-items: center;
+}
+.menu-esquerda__btn-yotube {}
+
+.menu-esquerda__btn-yotube i {
+  color: var(--cor-borda-azul);
+}
+.menu-esquerda .texto-yotube {
+  color: white;
+  text-transform: uppercase;
+  font-size: .7rem;
+  position: relative;
+  margin-left: .2rem;
+}
+.menu-esquerda .texto-flutuante {
+  font-size: .4rem;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top: -0.375rem;
+}
+/* ======================== MENU MEIO ================ */
+.menu-meio {
+  display: flex;
+  align-items: stretch;
+  height: 1.2rem;
+  /* corrigiu o problema */
+  display: none;
+}
+.menu-meio__campo-texto {
+  display: flex;
+}
+.menu-meio input {
+  background-color: var(--cor-fundo-geral);
+  border: 0.0625rem solid var(--cor-borda);
+  outline: none;
+  color: white;
+  font-size: .6rem;
+  font-weight: 100;
+  padding-left: var(--espaço-esquerdo);
+}
+.menu-meio__campo-texto {
+  position: relative;
+}
+.menu-meio__campo-texto i {
+  position: absolute;
+  width: .3125rem;
+  height: .31255rem;
+  right: 15px;
+  top: 19%;
+  display: none;
+  margin-right: var(--espaço-direito);
+}
+.menu-meio input:hover {
+  outline: 0.0625rem solid var(--cor-borda-azul);
+}
+.menu-meio input::placeholder {
+  font-size: .8rem;
+}
+.menu-meio__bt-lupa {
+  background-color: var(--cor-botao-escuro);
+  padding: .4rem .4rem;
+  border-radius: 0 0.125rem 0.125rem 0;
+}
+/* ======================== MENU DIREITA =============== */
+.menu-direita  {
+  display: flex;
+  align-items: center;
+  gap: .5rem
+}
+.menu-direita__imagem img {
+  border-radius: 1.25em;
+  width: 2rem;
+  height: 2rem;
+  display: none;
+}
+
+.teste {
+    margin-top: 50px;
+}
+/*=======================  CONTEUDO PRINCIPAL ==============================*/
+main {
+  color: white !important;
+}
+
+.episodeos-descricao__titulo {
+  color: white;
+}
+/* ============= MENU LATERAL FIXO ==================== */
+
+.menu-lateral-fixo {
+  position: absolute;
+  top: 56.78px;
+  width: 100%;
+  background: #034284;
+  z-index: 200;
+  left: -100px;
+  overflow-y: scroll;
+  height: 100vh;
+  padding-bottom: 10rem;
+  /* display: none;   */
+  padding-top: .5rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1mm all ease-in-out;
+
+}
+.menu-lateral-fixo.ativo {
+ visibility: visible;
+ opacity: 1;
+ left: 0;
+}
+
+.secao-menu-lateral__lista {
+  position: relative;
+} 
+.secao-menu-lateral__lista i {
+     position: absolute;
+     right: 0;  
+     color: red; 
+}
+
+.secao-menu-lateral__item-lista {
+  padding: .6rem 0;
+}
+
+.menu-lateral__dropdown {
+  padding-left: .9rem;
+  border-top: 2px solid #fff;
+}
+
+.dropdown__item-lista {
+  padding: .6rem;
+}
+
+.menu-lateral-fixo  .menu-lateral__btn-dropdown{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+
+}
+.menu-lateral__btn-dropdown {
+
+}
+
+.menu-lateral__btn-dropdown-titulo {
+  color: red;
+}
+
+.menu-lateral-fixo a ,  p {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-lateral-fixo i {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+} 
+
+

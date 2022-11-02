@@ -1,0 +1,136 @@
+/*================== BLOCO COMENTARIOS ================== */
+
+  .comentarios {
+    background-color: var(--cor-fundo-geral);
+  }
+  .nota-media {
+    margin-bottom: 1.2rem;
+  }
+  .nota-media__titulo {
+    font-size: 1rem;
+  }
+  .nota-media__btn {
+    color: white;
+  }
+  .nota-media__nota {
+    font-size: 1.2rem;
+  }
+   .nota-media__btn .bx-down-arrow {
+    font-size: .8rem;
+   } 
+   .resenhas {
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   .resenhas__texto {
+      font-size: 20px
+   }
+   .resenhas__conjunto-btn {
+      font-size: 25px;
+      display: flex;
+      gap: 20px;
+   }
+  .resenhas__conjunto-btn .resenhas__btn {
+      color: #9a9a9a;
+  }
+   .publicacoes {
+      margin-bottom: 5rem;
+   }
+   .publicacoes__card {
+      margin-bottom: 1.2rem;
+      background-color: var(--cor-botao-escuro);
+      padding:10px
+   }
+   .publicacoes__card-topo {
+      display: flex;
+      gap: 10px;
+      margin-bottom: var(--margin-b-10);
+   }
+   .publicacoes__card-bloco-img img {
+      border-radius: 20px;
+      width:18px;
+      height: 18px;
+   }
+   .publicacoes__card-legenda {
+      font-size: 14px;
+   }
+  .publicacoes__card-legenda i {
+      color: #2877b3;
+      font-weight: bold;
+  }
+  .publicacoes__card-perfil {
+        color: #2877b3;
+      font-weight: bold;
+  }
+  .publicacoes__card-meio {
+      display: flex;
+      gap: 8px;
+      margin-bottom: var(--margin-b-10);
+  }
+  .publicacoes__card-meio .publicacoes__card-meio-btn {
+  font-size:30px;
+  }
+  .publicacoes__card-meio .publicacoes__card-meio-btn i {
+      color: var(--cor-borda-azul);
+  
+  }
+  .publicacoes__card-rodape {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .publicacoes__card-rodape-btn {
+      width: 100%;
+      padding: 10px;
+      text-transform: uppercase;
+      background-color: var(--cor-vermelha);
+      border: none;
+  }
+  .publicacoes__card-legenda {
+      line-height: normal;
+  }
+  .publicacoes__card-rodape-texto--modificado {
+      font-size: var(--font-sz-5);
+      line-height: 1.2;
+      height: 80px;
+      overflow-y: scroll;
+      margin-bottom: 2rem;
+  }
+  .publicacoes__card-rodape-texto--escuro {
+      font-size: var(--font-sz-5);
+      color:#9a9a9a;
+      font-weight: bold;
+      margin-bottom:var(--margin-b-11);
+      line-height:normal;
+  }
+  .publicacoes__card-rodape-btn--modificado {
+      width: auto;
+      background-color: transparent;
+      font-size: 20px;
+  } 
+  .btn-sim {
+      color: var(--cor-borda-azul);
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 16px;
+  }
+  .btn-nao {
+      color: var(--cor-borda-azul);
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 16px;
+  }
+  .escreva-comentario__btn {
+      display: flex;
+      align-items: center;
+      width: 100%;
+  }
+  .escreva-comentario__legenda {
+      width: 100%;
+      padding: 10px;
+      text-transform: uppercase;
+      background-color: var(--cor-vermelha);
+      border: none;
+  }

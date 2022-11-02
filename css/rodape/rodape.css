@@ -1,0 +1,112 @@
+/* ========================== RODAPE ======================================== */
+.rodape {
+    background-image:linear-gradient( to bottom , var(--cor-fundo-geral) , var(--cor-botao-escuro));
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+
+}
+
+.rodape-secao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid var(--cor-borda-azul);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+
+
+}
+
+.rodape-secao__titulo {
+    grid-column: 1/1;
+    font-size: var(--font-sz-6);
+    color:var(--cor-borda-azul);
+    font-weight: bold;
+
+}
+
+.lista-animes {
+    grid-column: 2/2;
+    font-size: .8rem;
+
+}
+
+.lista__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} 
+
+.lista__link i {
+    color: var(--cor-borda-azul);
+    font-size: large;
+
+}   
+
+.lista__item {
+    padding: 8px 0;
+}
+
+.lista__link {
+    color:#fff;
+    font-weight: bold;
+}
+.dropdown-idiomas {
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:var(--cor-fundo-geral);
+    width:100%;
+    z-index: 20;
+    height: 100vh;
+    font-size:.9rem;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.dropdown-idiomas.ativo {
+    opacity: 1;
+    visibility: visible;
+
+}  
+.dropdown-topo {
+    background-color:var(--cor-botao-escuro);
+    padding: .9rem .7rem;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.dropdown-topo__btn-x-caixa i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+.dropdown-idiomas__lista {
+    padding:  5% 0 0 5% ;
+}
+
+.dropdown-idiomas__item-lista {
+    padding-top: 1rem;
+}
+
+
+@media (min-width:425px) {
+
+    .rodape-secao {
+        display: block;
+    } 
+    .rodape .container-1 {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+
+}
+
+
+@media (min-width:700px) { }
+
+
+@media (min-width:1200px) { }
+

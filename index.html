@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/testando-grid.css">
+  <!-- ICONE YOTUBE -->
+  <link rel="icon" href="img/icone-yotube.ico">
+
+
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- BOX ICONS -->
+  <link rel="stylesheet" href="boxicons.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- BOOTSTRAP -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/reset.css">
+  <title>Vide Tube</title>
+
+  
+    <!-- BARRA INFERIOR FIXA -->
+    <link rel="stylesheet" href="css/barra-inferior/barra-inferior-fixa.css">
+    <link rel="stylesheet" href="css/header/cabecalho.css">
+    <link rel="stylesheet" href="css/menu-lateral-fixo/menu-lateral-fixo.css">
+    <link rel="stylesheet" href="css/rodape/rodape.css">
+    <!-- ARQUIVO DE ESTILOS -->
+    <link rel="stylesheet" href="css/index.css">
+
+    
+
+</head>
+<!--  1 - A ALTURA DO CONTAINER É O SEU CONTEUDO 
+      2 - PODEMOS DEFINIR UMA ALTURA FIXA
+      3 - PORCENTAGEM EM ALTURA NÃO FUNCIONA
+      4 - O POSITION TRABALHA COM A DIREÇÃO INVERSA
+-->
+
+<body>
+  <!-- =================== O CONTEUDO VAI SER A ALTURA ====================== -->
+  <header>
+    <div class="container-1">
+      <div class="embrulho">
+        <!-- =================== MENU ESQUERDA =========================== -->
+        <div class="menu-esquerda">
+          <button class="menu-esquerda__btn-hamburger" js-btn-hamburger>
+            <i class='bx bx-menu'></i>
+          </button>
+          <button class="menu-esquerda__btn-yotube ">
+            <i class='bx bxs-videos'></i><span class="texto-yotube">Vid-Tube<span
+                class="texto-flutuante">br</span></span>
+          </button>
+        </div>
+        <!-- =================== MENU MEIO =============================== -->
+        <div class="menu-meio">
+          <form action="" class="menu-meio__campo-texto">
+            <input type="text" placeholder="Pesquisar">
+            <i class='bx bxs-keyboard menu-meio__teclado'></i>
+          </form>
+          <button class="menu-meio__bt-lupa">
+            <i class='bx bx-search'></i>
+          </button>
+        </div>
+        <!-- =================== MENU DIREITA ============================ -->
+        <div class="menu-direita">
+          <button class="menu-direita__notificacao">
+            <i class='bx bx-search'></i>
+          </button>
+          <div class="menu-direita__imagem">
+            <img src="img/avatar.jpg" width="15" height="15" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="menu-lateral-fixo " js-menu-lateral-fixo  >
+   <div class="container-1">
+    <section class="secao-menu-lateral">
+        <ul class="secao-menu-lateral__lista">
+          <li class="secao-menu-lateral__item-lista"><a class="secao-menu-lateral__link " href="">Navegar</a>
+            <i class='bx bx-x' js-menu-lateral-fixo-btn-x ></i>
+        </li>
+          <li class="secao-menu-lateral__item-lista"><a class="secao-menu-lateral__link" href="">Novidades</a>
+          </li>
+          <li class="secao-menu-lateral__item-lista"><a class="secao-menu-lateral__link" href="">A-Z</a></li>
+          <li class="secao-menu-lateral__item-lista"><a class="secao-menu-lateral__link" href="">Simulcats da
+              Temporada</a></li>
+          <li class="secao-menu-lateral__item-lista"><a class="secao-menu-lateral__link" href="">Calendario de
+              Lançamentos</a></li>
+          <li class="secao-menu-lateral__item-lista">
+            <button class="menu-lateral__btn-dropdown">
+              <p class="menu-lateral__btn-dropdown-titulo">Generos</p>
+              <i class='bx bx-chevron-down'></i>
+            </button>
+            <!--========================= DROPDOWN ========================= -->
+            <ul class="menu-lateral__dropdown">
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Açao</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Aventura</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Comedia</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Drama</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Fantasia</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Musica</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Romance</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Ficção Cientifica</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Seinen</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Shoujo</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Shounen</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Slice-of-life</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Esportes</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Sobrenatural</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Suspence</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="secao-menu-lateral__lista">
+          <li class="secao-menu-lateral__item-lista"><a class="secao-menu-lateral__link" href="">Mangá</a></li>
+          <li class="secao-menu-lateral__item-lista"><a class="secao-menu-lateral__link" href="">Jogos</a></li>
+          <li class="secao-menu-lateral__item-lista">
+            <button class="menu-lateral__btn-dropdown">
+              <p class="menu-lateral__btn-dropdown-titulo">Noticias</p>
+              <i class='bx bx-chevron-down'></i>
+            </button>
+            <!--========================= DROPDOWN ========================= -->
+            <ul class="menu-lateral__dropdown">
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Açao</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Aventura</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Comedia</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Drama</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Fantasia</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Musica</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Romance</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Ficção Cientifica</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Seinen</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Shoujo</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Shounen</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Slice-of-life</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Esportes</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Sobrenatural</a></li>
+              <li class="dropdown__item-lista"><a href="" class="dropdown__link">Suspence</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+   </div>
+
+  </div>
+  <!-- =================== CARROSEL ===================================== -->
+  <div class="carrosel">
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner ">
+        <div class="carousel-item carousel-item--1 active" data-interval="3000">
+          <img src="/img/dragon-boll.jpeg" class="d-block w-100  carrosel__img" alt="...">
+        </div>
+        <div class="carousel-item carousel-item--2 " data-interval="3000">
+          <img src="img/bclack-sumoner.jpeg" class="d-block  w-100  carrosel__img" alt="...">
+        </div>
+        <div class="carousel-item carousel-item--3 " data-interval="3000">
+          <img src="img/bleach.jpg" class="d-block w-100  carrosel__img" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleInterval" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleInterval" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+  </div>
+  <aside>
+    <div class="banner">
+      <div class="banner__conteudo">
+        <h3 class="banner__titulo">Naruto Shipudden</h3>
+        <button class="banner__btn-bloco">
+          <i class='bx bx-play'></i><span class="principal__banner-btn-texto">Assistir Agora</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+  <!-- ============================ CONTEUDO PRINCIPAL =================================================== -->
+  <main>
+    <div class="container-1">
+      <div class="principal">
+        <!-- ============================ SEÇÃO RECOMENDAÇOES ====================== -->
+        <section class="recomendacoes">
+          <h2 class="recomendacoes__titulo">Conheça nosso catalogo</h2>
+          <div class="wrapper">
+            <div class="cartao ">
+              <a href="pagina-video.html" class="cartao__link">
+                <img src="img/orient.jpg" class="cartao__imagem" alt="">
+                <div class="cartao__corpo">
+                  <p class="cartao__titulo">Orient</p>
+                  <p class="cartao__subtitulo"><span class="cartao__texto-serie">Serie </span><span
+                      class="cartao__texto-dublado">Dublado</span></p>
+                </div>
+              </a>
+            </div>
+            <div class="cartao ">
+              <a href="#" class="cartao__link">
+                <img src="img/naruto-imagem.jpg" class="cartao__imagem" alt="">
+                <div class="cartao__corpo">
+                  <p class="cartao__titulo">Naruto Classico</p>
+                  <p class="cartao__subtitulo"><span class="cartao__texto-serie">Serie </span><span
+                      class="cartao__texto-dublado">Dublado</span></p>
+                </div>
+              </a>
+            </div>
+            <div class="cartao ">
+              <a href="#" class="cartao__link">
+                <img src="img/bclack-sumoner.jpeg" class="cartao__imagem" alt="">
+                <div class="cartao__corpo">
+                  <p class="cartao__titulo">Black Sumoner</p>
+                  <p class="cartao__subtitulo"><span class="cartao__texto-serie">Serie </span><span
+                      class="cartao__texto-dublado">Dublado</span></p>
+                </div>
+              </a>
+            </div>
+            <div class="cartao ">
+              <a href="#" class="cartao__link">
+                <img src="img/dragon-boll-novo.jpg" class="cartao__imagem" alt="">
+                <div class="cartao__corpo">
+                  <p class="cartao__titulo">Dragon Boll Kai</p>
+                  <p class="cartao__subtitulo"><span class="cartao__texto-serie">Serie </span><span
+                      class="cartao__texto-dublado">Dublado</span></p>
+                </div>
+              </a>
+            </div>
+            <div class="cartao ">
+              <a href="#" class="cartao__link">
+                <img src="img/dragon-quest-nova.jpg" class="cartao__imagem" alt="">
+                <div class="cartao__corpo">
+                  <p class="cartao__titulo">Dragon Quest</p>
+                  <p class="cartao__subtitulo"><span class="cartao__texto-serie">Serie </span><span
+                      class="cartao__texto-dublado">Dublado</span></p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- ============================ SEÇÃO RECOMENDAÇOES ====================== -->
+        <section class="recomendacoes">
+          <h2 class="recomendacoes__titulo">Recomendaçoes</h2>
+          <div class="wrapper">
+            <div class="cartao ">
+              <a href="#" class="cartao__link">
+                <img src="img/sem-saida.jpg" class="cartao__imagem" alt="">
+                <div class="cartao__corpo">
+                  <p class="cartao__titulo">Sem saida</p>
+                  <p class="cartao__subtitulo"><span class="cartao__texto-serie">Serie </span><span
+                      class="cartao__texto-dublado">Dublado</span></p>
+                </div>
+              </a>
+            </div>
+            <div class="cartao ">
+              <a href="/animes/Tokyo-revengers/episodeos-tokyo-revengers.html" class="cartao__link">
+                <img src="img/tokyo-revengers.jpeg" class="cartao__imagem" alt="">
+                <div class="cartao__corpo">
+                  <p class="cartao__titulo">Tokyo Revengers</p>
+                  <p class="cartao__subtitulo"><span class="cartao__texto-serie">Serie </span><span
+                      class="cartao__texto-dublado">Dublado</span></p>
+                </div>
+              </a>
+            </div>
+
+            <div class="cartao ">
+              <a href="" class="cartao__link">
+                <img src="img/nagatoro.jpeg" class="cartao__imagem" alt="">
+                <div class="cartao__corpo">
+                  <p class="cartao__titulo">Nagatoro</p>
+                  <p class="cartao__subtitulo"><span class="cartao__texto-serie">Serie </span><span
+                      class="cartao__texto-dublado">Dublado</span></p>
+                </div>
+              </a>
+            </div>
+            <div class="cartao ">
+              <a href="" class="cartao__link">
+                <img src="img/one-push.jpeg" class="cartao__imagem" alt="">
+                <div class="cartao__corpo">
+                  <p class="cartao__titulo">One Punch Main</p>
+                  <p class="cartao__subtitulo"><span class="cartao__texto-serie">Serie </span><span
+                      class="cartao__texto-dublado">Dublado</span></p>
+                </div>
+              </a>
+            </div>
+            <div class="cartao ">
+              <a href="" class="cartao__link">
+                <img src="img/doutor-stone.jpeg" class="cartao__imagem" alt="">
+                <div class="cartao__corpo">
+                  <p class="cartao__titulo">Dr Stone</p>
+                  <p class="cartao__subtitulo"><span class="cartao__texto-serie">Serie </span><span
+                      class="cartao__texto-dublado">Dublado</span></p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <!-- ============================ BARRA INFERIOR FIXA =================================================== -->
+  <div class="barra-inferior-fixa">
+    <div class="container-1">
+      <ul class="barra-inferiror__lista">
+        <li class="barra-inferior__item-lista">
+          <a href="index.html" class="barra-inferior__link">
+            <button class="barra-inferior__btn-inicio-bloco">
+              <div> <i class='bx bx-home-alt-2'></i></div>
+              <p class="barra-inferior__btn-texto">Inicio</p>
+            </button>
+          </a>
+        </li>
+        <li class="barra-inferior__item-lista">
+          <a href="" class="barra-inferior__link">
+            <button class="barra-inferior__btn-inicio-bloco">
+              <i class='bx bx-copy-alt'></i>
+              <p class="barra-inferior__btn-texto">Listas</p>
+            </button>
+          </a>
+        </li>
+        <li class="barra-inferior__item-lista">
+          <a href="" class="barra-inferior__link">
+            <button class="barra-inferior__btn-inicio-bloco">
+              <i class='bx bx-book'></i>
+              <p class="barra-inferior__btn-texto">Catalogo</p>
+            </button>
+          </a>
+        </li>
+        <li class="barra-inferior__item-lista">
+          <a href="" class="barra-inferior__link">
+            <button class="barra-inferior__btn-inicio-bloco">
+              <i class='bx bxs-star-half'></i>
+              <p class="barra-inferior__btn-texto">Simulcats</p>
+            </button>
+          </a>
+        </li>
+        <li class="barra-inferior__item-lista oculto">
+          <a href="" class="barra-inferior__link">
+            <button class="barra-inferior__btn-inicio-bloco">
+              <img src="img/avatar.jpg" width="16" height="16" alt="">
+              <p class="barra-inferior__btn-texto">Conta</p>
+            </button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- ============================ PAINEL CLASSICOS =================================================== -->
+  <div class="classicos">
+    <div class="container-1">
+      <div class="painel-classicos">
+        <section class="painel-classicos__topo">
+          <h2 class="painel-classicos__topo-titulo"> Materias mais lidas</h2>
+          <i class='bx bx-chevron-right'></i>
+        </section>
+        <a href="painel-classicos__link">
+          <section class="painel-classicos__corpo">
+            <figure class="painel-classicos__bloco-imagem">
+              <img src="img/genishiro-inpact.jpg" alt="Imagem Genishiro-inpact">
+            </figure>
+            <div class="painel-classicos__descricao">
+              <p class="painel-classicos__texto">Gemishiro inpact um jogo de Sobrevivencia eletrizante</p>
+              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+              </p>
+            </div>
+          </section>
+        </a>
+        <a href="painel-classicos__link">
+          <section class="painel-classicos__corpo">
+            <figure class="painel-classicos__bloco-imagem">
+              <img src="img/dragon-boll.jpeg" alt="Imagem Genishiro-inpact">
+            </figure>
+            <div class="painel-classicos__descricao">
+              <p class="painel-classicos__texto">Dragon Boll Encontre as Esferas do Dragao</p>
+              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+              </p>
+            </div>
+          </section>
+        </a>
+        <a href="painel-classicos__link">
+          <section class="painel-classicos__corpo">
+            <figure class="painel-classicos__bloco-imagem">
+              <img src="img/orient.jpg" alt="Imagem Genishiro-inpact">
+            </figure>
+            <div class="painel-classicos__descricao">
+              <p class="painel-classicos__texto">Orient um jogo emocionante</p>
+              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+              </p>
+            </div>
+          </section>
+        </a>
+        <a href="painel-classicos__link">
+          <section class="painel-classicos__corpo">
+            <figure class="painel-classicos__bloco-imagem">
+              <img src="img/doutor-stone.jpeg" alt="Imagem Genishiro-inpact">
+            </figure>
+            <div class="painel-classicos__descricao">
+              <p class="painel-classicos__texto">Doutor Stone explore um mundo primitivo</p>
+              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+              </p>
+            </div>
+          </section>
+        </a>
+      </div>
+      <div class="painel-classicos">
+        <section class="painel-classicos__topo">
+          <h2 class="painel-classicos__topo-titulo">Mais Antigo</h2>
+          <i class='bx bx-chevron-right'></i>
+        </section>
+        <a href="painel-classicos__link">
+          <section class="painel-classicos__corpo">
+            <figure class="painel-classicos__bloco-imagem">
+              <img src="img/genishiro-inpact.jpg" alt="Imagem Genishiro-inpact">
+            </figure>
+            <div class="painel-classicos__descricao">
+              <p class="painel-classicos__texto">Gemishiro inpact um jogo de Sobrevivencia eletrizante</p>
+              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+              </p>
+            </div>
+          </section>
+        </a>
+        <a href="painel-classicos__link">
+          <section class="painel-classicos__corpo">
+            <figure class="painel-classicos__bloco-imagem">
+              <img src="img/nagatoro.jpeg" alt="Imagem Genishiro-inpact">
+            </figure>
+            <div class="painel-classicos__descricao">
+              <p class="painel-classicos__texto">As Aventuras de Nagatoro</p>
+              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+              </p>
+            </div>
+          </section>
+        </a>
+        <a href="painel-classicos__link">
+          <section class="painel-classicos__corpo">
+            <figure class="painel-classicos__bloco-imagem">
+              <img src="img/bclack-sumoner.jpeg" alt="Imagem Genishiro-inpact">
+            </figure>
+            <div class="painel-classicos__descricao">
+              <p class="painel-classicos__texto">Black Sumoner qualidade grafica expetacular</p>
+              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+              </p>
+            </div>
+          </section>
+        </a>
+        <a href="painel-classicos__link">
+          <section class="painel-classicos__corpo">
+            <figure class="painel-classicos__bloco-imagem">
+              <img src="img/tokyo-revengers.jpeg" alt="Imagem Genishiro-inpact">
+            </figure>
+            <div class="painel-classicos__descricao">
+              <p class="painel-classicos__texto">Tokyo-Revengers so comentam desse anime</p>
+              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+              </p>
+            </div>
+          </section>
+        </a>
+
+        <a href="painel-classicos__link">
+          <section class="painel-classicos__corpo">
+            <figure class="painel-classicos__bloco-imagem">
+              <img src="img/sem-saida.jpg" alt="Imagem Genishiro-inpact">
+            </figure>
+            <div class="painel-classicos__descricao">
+              <p class="painel-classicos__texto">Sem saida um anime cheio de medo e perigo, voce vai ficar
+                morrendo de medo</p>
+              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+              </p>
+            </div>
+          </section>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- ============================================ NOTICIAS IMPORTANTES ========================================-->
+  <div class="noticias-importantes">
+    <div class="container-1">
+      <h5 class="noticias-importantes__titulo"><i class='bx bx-bell'></i>Vide Tube Noticias</h5>
+      <div class="noticias-importantes-grid">
+        <p class="noticias-importantes-grid__titulo">Noticias em destaque</p>
+        <!-- ========================  CARD-1 ======================================= -->
+        <div class="noticias-importantes__card coluna-1">
+          <img src="img/bclack-sumoner.jpeg" alt="Black sumoner imagem">
+          <div class="card__corpo">
+            <h3 class="card__titulo">Especial não perca os animes deste ano</h3>
+            <p class="card__subtitulo">15 de outrubro , de 2022 as 13:00hs , por Thiago Silva</p>
+          </div>
+        </div>
+        <!-- ========================  CARD-2 ======================================= -->
+        <div class="noticias-importantes__card coluna-2">
+          <img src="img/dragon-boll-novo.jpg" alt="Black sumoner imagem">
+          <div class="card__corpo">
+            <h3 class="card__titulo">Especial não perca os animes deste ano</h3>
+            <p class="card__subtitulo">15 de outrubro , de 2022 as 13:00hs , por Thiago Silva</p>
+          </div>
+        </div>
+      </div>
+      <!--=========================== COPIA PAINEL CLASSICOS ==================================== -->
+      <div class="painel-classicos">
+        <section class="painel-classicos__topo">
+          <h2 class="painel-classicos__topo-titulo">Mais Antigos</h2>
+          <i class='bx bx-chevron-right'></i>
+        </section>
+        <a href="painel-classicos__link">
+          <section class="painel-classicos__corpo">
+            <figure class="painel-classicos__bloco-imagem">
+              <img src="img/genishiro-inpact.jpg" alt="Imagem Genishiro-inpact">
+            </figure>
+            <div class="painel-classicos__descricao">
+              <p class="painel-classicos__texto">Gemishiro inpact um jogo de Sobrevivencia eletrizante</p>
+              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+              </p>
+            </div>
+          </section>
+        </a>
+        <a href="painel-classicos__link">
+          <section class="painel-classicos__corpo">
+            <figure class="painel-classicos__bloco-imagem">
+              <img src="img/nagatoro.jpeg" alt="Imagem Genishiro-inpact">
+            </figure>
+            <div class="painel-classicos__descricao">
+              <p class="painel-classicos__texto">As Aventuras de Nagatoro</p>
+              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+              </p>
+            </div>
+          </section>
+        </a>
+        <a href="painel-classicos__link">
+          <section class="painel-classicos__corpo">
+            <figure class="painel-classicos__bloco-imagem">
+              <img src="img/bclack-sumoner.jpeg" alt="Imagem Genishiro-inpact">
+            </figure>
+            <div class="painel-classicos__descricao">
+              <p class="painel-classicos__texto">Black Sumoner qualidade grafica expetacular</p>
+              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+              </p>
+            </div>
+          </section>
+        </a>
+        <a href="painel-classicos__link">
+          <section class="painel-classicos__corpo">
+            <figure class="painel-classicos__bloco-imagem">
+              <img src="img/tokyo-revengers.jpeg" alt="Imagem Genishiro-inpact">
+            </figure>
+            <div class="painel-classicos__descricao">
+              <p class="painel-classicos__texto">Tokyo-Revengers so comentam desse anime</p>
+              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+              </p>
+            </div>
+          </section>
+        </a>
+        <a href="painel-classicos__link">
+          <section class="painel-classicos__corpo">
+            <figure class="painel-classicos__bloco-imagem">
+              <img src="img/sem-saida.jpg" alt="Imagem Genishiro-inpact">
+            </figure>
+            <div class="painel-classicos__descricao">
+              <p class="painel-classicos__texto">Sem saida um anime cheio de medo e perigo, voce vai ficar
+                morrendo de medo</p>
+              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+              </p>
+            </div>
+          </section>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="cartao-composto">
+    <div class="container-1">
+      <div class="cartao">
+        <figure>
+          <img src="img/heroines-run.jpeg" alt="Imagem Heroines Run">
+          <figcaption class="cartao__img-titulo">Heroines Run the Show</figcaption>
+        </figure>
+        <div class="cartao__corpo">
+          <div class="cartao__serie-bloco">
+            <div>
+              <span class="cartao__serie-texto-serie">Serie </span><span class="cartao__serie-texto-legendado">Leg
+              </span>| <span class="cartao__serie-texto-dublado">Dublado</span>
+            </div>
+            <div>
+              <i class='bx bx-bookmark'></i>
+            </div>
+          </div>
+          <div class="cartao__descricao">
+            <p class="cartao__descricao-subtitulo">Ate aonde voce iria para perseguir sua paixao? Hiyouri
+              Suzumi sabe
+              bem a resposta ela deixou sua pacata cidade natal no interior para conserguir...</p>
+            <a href="#" class="cartao__link">
+              <button class="cartao__btn">
+                <i class='bx bx-right-arrow'></i>
+                <span class="cartao__btn-titulo">começar a assistir s1 e1</span>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="rodape">
+    <div class="container-1">
+        <section class="rodape-secao">
+            <h3 class="rodape-secao__titulo">Navegação</h3>
+            <ul class="lista-animes">
+                <li class="lista__item"><a href="" class="lista__link">Series Populares</a></li>
+                <li class="lista__item"><a href="" class="lista__link">Series em Simulcats</a></li>
+                <li class="lista__item"><a href="" class="lista__link">Ler Manga</a></li>
+                <li class="lista__item"><a href="" class="lista__link">Calendario de Lançamentos</a></li>
+                <li class="lista__item"><a href="" class="lista__link">Noticias</a></li>
+                <li class="lista__item"><a href="" class="lista__link">Forum</a></li>
+                <li class="lista__item"><a href="" class="lista__link">Jogos</a></li>
+            </ul>
+        </section>
+        <section class="rodape-secao">
+            <h3 class="rodape-secao__titulo">Contate-nos</h3>
+            <ul class="lista-animes">
+                <li class="lista__item"><a href="" class="lista__link"><i class='bx bx-video'></i> Yotube</a></li>
+                <li class="lista__item"><a href="" class="lista__link"><i class='bx bxl-facebook'></i> Facebook</a>
+                </li>
+                <li class="lista__item"><a href="" class="lista__link"><i class='bx bxl-twitter'></i> Twitter</a>
+                </li>
+                <li class="lista__item"><a href="" class="lista__link"><i class='bx bxl-instagram'></i>
+                        Instagram</a></li>
+            </ul>
+        </section>
+
+        <section class="rodape-secao">
+            <h3 class="rodape-secao__titulo">Vide Tube</h3>
+            <ul class="lista-animes">
+                <li class="lista__item"><a href="" class="lista__link">Sobre</a></li>
+                <li class="lista__item"><a href="" class="lista__link">Ajuda/FAQ</a></li>
+                <li class="lista__item"><a href="" class="lista__link">Termos de Uso</a></li>
+                <li class="lista__item"><a href="" class="lista__link">Politica de Privacidade</a></li>
+                <li class="lista__item"><a href="" class="lista__link">Ferramenta de Cookies</a></li>
+                <li class="lista__item"><a href="" class="lista__link">Solicitaçoes de Imprensa</a></li>
+                <li class="lista__item"><a href="" class="lista__link">Baixe o App</a></li>
+                <li class="lista__item"><a href="" class="lista__link">Resgatar Código</a></li>
+                <li class="lista__item"><a href="" class="lista__link">Vagas</a></li>
+            </ul>
+
+        </section>
+
+        <section class="rodape-secao">
+            <h3 class="rodape-secao__titulo">&COPY; Ellation, LLC</h3>
+            <button class="rodape-secao__btn-caixa">
+                <p class="rodape-secao__btn-texto">portugues(brasil)</p>
+            </button>
+            <!-- position-fixed -->
+            <div class="dropdown-idiomas">
+                <div class="dropdown-topo">
+                    <h2 class="dropdown-topo__titulo"> idioma</h2>
+                    <div class="dropdown-topo__btn-x-caixa">
+                        <i class='bx bx-x'></i>
+                    </div>
+                </div>
+                <ul class="dropdown-idiomas__lista">
+                    <li class="dropdown-idiomas__item-lista"><a href="" class="dropdown-idiomas__link">Deutsch</a>
+                    </li>
+                    <li class="dropdown-idiomas__item-lista"><a href=""
+                            class="dropdown-idiomas__link">English(US)</a></li>
+                    <li class="dropdown-idiomas__item-lista"><a href="" class="dropdown-idiomas__link">Espanhol</a>
+                    </li>
+                    <li class="dropdown-idiomas__item-lista"><a href=""
+                            class="dropdown-idiomas__link">Espanhol(Espana)</a></li>
+                    <li class="dropdown-idiomas__item-lista"><a href=""
+                            class="dropdown-idiomas__link">Frances(France)</a></li>
+                    <li class="dropdown-idiomas__item-lista"><a href="" class="dropdown-idiomas__link">Italiano</a>
+                    </li>
+                    <li class="dropdown-idiomas__item-lista"><a href=""
+                            class="dropdown-idiomas__link">Portuges(Brasil)</a></li>
+                    <li class="dropdown-idiomas__item-lista"><a href=""
+                            class="dropdown-idiomas__link">Portugês(Portugal)</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+
+
+  <!-- BOX ICONS -->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+  <!-- BOOTSTRAP -->
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+    <script src="/js/index.js">
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,397 @@
+
+/*======================= ESTILOS PADROES ====================== */
+:root {
+  --cor-borda: #343434;
+  --cor-fundo-geral: #181818;
+  --cor-azul: #a9d4e2;
+  --cor-escura: #121212;
+  --cor-vermelha: #cc0000;
+  --cor-icones: #9a9a9a;
+  --cor-botao-escuro: #313131;
+  --cor-icone-teclado: #6e6e6e;
+  --cor-trasparente-botao: #373737;
+  --cor-borda-azul: #2877b3;
+  --cor-textos-fraca: #7c7c7c;
+  --cor-titulo: #9a9a9a;
+  --espaço-esquerdo: 0.25rem;
+  --espaço-direito: 0.25rem;
+  /* TAMANHO DE FONTE MOBILE */
+  /* Essa medida mantem a porporção */
+  --font-sz-1: .4rem;
+  --fonte-sz-2: .5rem;
+  --fonte-sz-3: .6rem;
+  --font-sz-4: .7rem;
+  --font-sz-5: .8rem;
+  --font-sz-6: .9rem;
+  --font-sz-7: 1.2rem;
+  --font-sz-8: 1.5rem;
+  --margin-b-5: 0.3125rem;
+  --margin-b-10: 0.625rem;
+  --margin-b-11:0.800rem;
+  --margin-b-12:1rem;
+  --border-booton-1: 0.0625rem;
+  --border-booton-3: 0.1875rem;
+  --border-booton-5: 0.3125rem;
+  --padding-b: .5rem;
+  --c-gap: 0.625rem;
+}
+
+body {
+    background-color: var(--cor-fundo-geral);
+    font-family: "Roboto", sans-serif;
+}
+
+i {
+    width: 16px;
+    height: 16px;
+}
+a {
+    display: inline-block;
+}
+/* TAMANHO DE FONTE DESKTOP */
+/* ALIGN ITENS CENTER : EIXO-Y */
+/*======================= ELEMENTOS REUTILIZAVEIS ============== */
+.container-1 {
+    padding: 0 5%;
+}
+.icone-menu {
+  color: #aaa;
+  font-weight: 300;
+}
+/* vai direto para a coluna 1 */
+.col-1 {
+  grid-column: 1/1;
+}
+/*VAI DIRETO PARA A COLUNA 2 */
+.col-2 {
+  grid-column: 2/2;
+}
+.barra-rolagem::-webkit-scrollbar {
+  background-color: transparent;
+}
+.barra-rolagem::-webkit-scrollbar-thumb {
+  background-color: #9a9a9a;
+}
+.barra-rolagem::-webkit-scrollbar-track {}
+.barra-rolagem::-webkit-scrollbar-corner {}
+
+
+
+/* ============= CARROSEL ==================== */
+.carousel {}
+.carousel-inner {
+  margin-top: 56.78px;
+  height: 40vh;
+  border: none;
+  background-color: var(--cor-fundo-geral);
+  margin-bottom: var(--margin-b-12);
+
+}
+.carousel-item {
+  height: 100%;
+}
+.carousel-item--1 {
+  background: linear-gradient(to right, #f84201, #be3405);
+}
+.carousel-item--2 {
+  background: linear-gradient(to bottom, #793a9b, #034284);
+  transition: 1s linear ease;
+}
+.carousel-item--3 {}
+.carousel img {
+  height: 100%;
+  object-fit: contain;
+}
+.carousel-item {}
+.carrosel__img {}
+/* ======== BANER EXCLUIDO ================ */
+.banner {
+  /* height: 45vh;   */
+  margin-bottom: 0.9375rem;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+  margin: 0;
+  background: url(../img/naruto-banner2.jpeg) no-repeat;
+  background-size: 0 12.5rem;
+  background-position: 0 -3.125rem;
+  display: none;
+}
+.banner__titulo {
+  margin-bottom: 0.5rem;
+  margin-left: 1.666rem;
+  font-weight: bold;
+  color: #000;
+  font-size: 2rem;
+  text-shadow: 0 0 0.8333rem #2877b3;
+}
+.banner__btn-bloco {
+  background-color: #2877b3;
+  padding: .3125rem 0.625rem;
+  cursor: pointer;
+  margin-bottom: 0.625rem;
+  margin-left: 0.625rem;
+}
+.banner__btn-bloco i {
+  color: white;
+}
+.banner-btn-texto {
+  color: white;
+}
+/* =================== CONTEUDO PRINCIPAL PROPIO ==================================== */
+main {
+  background-color: #181818;
+}
+.wrapper {
+  /* display: flex;   */
+  /* gap: 10px;   */
+  overflow-x: scroll;
+  display: flex;
+  gap: 1.25rem;
+}
+.recomendacoes {
+  margin-bottom: var(--margin-b-11) ;
+  background-color:var(--cor-escura);
+}
+.recomendacoes__titulo {
+  color: white;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  margin-bottom: var(--margin-b-12);
+  padding-bottom: .3em;
+  border-bottom: 0.1875rem solid var(--cor-borda-azul);
+}
+.cartao {}
+.cartao:hover {}
+.cartao__link:hover {
+  background-color: #202020;
+  transition: 1s ease;
+}
+.cartao__imagem {
+  width: 9.375rem;
+  height: 14.0625rem;
+  /* para criar scroll não deixar a imagem responsiva */
+  /* max-width: 180px; */
+  margin-bottom: .3rem;
+}
+.cartao__corpo {}
+.cartao__titulo {
+  font-size: .9rem;
+  font-weight: bold;
+  margin-bottom: .4rem;
+  color: white;
+}
+.cartao__subtitulo {
+  font-size: .7rem;
+  margin-bottom: .3rem;
+  color: #909d9d;
+  font-weight: bold;
+}
+.cartao__texto-serie {
+  color: #2877b3;
+  font-weight: bold;
+}
+.cartao__texto-dublado {}
+.teste__menu {
+  display: flex;
+  overflow-x: scroll;
+  gap: 1.25rem;
+}
+.teste-input {
+  position: absolute;
+  bottom: 10%;
+  background-color: #9a9a9a;
+  height: 5vh;
+  width: 100%;
+  max-width: 50rem;
+}
+
+/* ================== PAINEL CLASSICOS =========================== */
+.classicos {
+  background-color: var(--cor-escura);
+  margin-bottom: var(--margin-b-11)  ;
+}
+.painel-classicos {}
+.painel-classicos__link {}
+.painel-classicos__topo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:var(--margin-b-11);
+}
+.painel-classicos__topo i {
+  color: white;
+  font-weight: bold;
+}
+.painel-classicos__topo-titulo {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+}
+.painel-classicos__corpo {
+  display: flex;
+  gap: 0.625rem;
+}
+.painel-classicos__bloco-imagem {
+  height: 4.625rem;
+  height: 6.25rem;
+}
+.painel-classicos__bloco-imagem img {
+  height: 74px;
+  width: 120px;
+  object-fit: cover;
+}
+.painel-classicos__descricao {
+  font-size: 1rem;
+}
+.painel-classicos__texto {
+  color: white;
+  margin-bottom: 0;
+  margin-bottom: var(--margin-b-10);
+  line-height: 1.5;
+}
+.painel-classicos__texto--fraco {
+  color: #6e6e6e;
+  font-weight: bold;
+  font-size: .9rem;
+}
+/* ================= NOTICIAS IMPORTANTES ========================= */
+.noticias-importantes {
+  background-color: var(--cor-fundo-geral);
+  color: white;
+  margin-bottom: var(--margin-b-11) ;
+}
+.noticias-importantes__titulo {
+  font-size: var(--font-sz-7);
+  display: flex;
+  align-items: center;
+  border-bottom: var(--border-booton-3) solid var(--cor-borda-azul);
+  margin-bottom: var(--margin-b-10) ;
+  padding-bottom: var(--padding-b);
+  gap: var(--c-gap);
+}
+.noticias-importantes__titulo i {
+  color: white;
+}
+.noticias-importantes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--c-gap);
+  margin-bottom: var(--margin-b-5) ;
+  border-bottom: var(--border-booton-3) solid var(--cor-borda-azul);
+  margin-bottom: var(--margin-b-11) ;
+}
+.noticias-importantes-grid__titulo {
+  font-size: var(--font-sz-7);
+  grid-column: 1 / span 2;
+}
+.noticias-importantes__card img {
+  margin-bottom: var(--margin-b-5);
+  width: 100%;
+}
+.coluna-1 {
+  grid-column: 1/1;
+}
+.coluna-2 {
+  grid-column: 2/2;
+}
+.noticias-importantes .card__corpo {}
+.noticias-importantes .card__titulo {
+  font-size: var(--font-sz-6);
+  margin-bottom: var(--margin-b-10);
+  line-height: 1.2;
+  font-weight: bold;
+}
+.noticias-importantes .card__subtitulo {
+  color: var(--cor-icone-teclado);
+  font-weight: bold;
+  font-size: var(--font-sz-5);
+  margin-bottom: var(--margin-b-10) ;
+  padding-bottom: var(--padding-b);
+  line-height: 1.2;
+}
+
+/* ========================= CARTAO COMPOSTO =================================== */
+.cartao-composto  {
+    width: 100%;
+    background-color: #181818;
+    color: white;
+    margin-bottom: var(--margin-b-10);
+}
+.cartao-composto .cartao {
+    width: 100%;
+    margin-bottom: 6rem;
+
+}
+
+.cartao-composto .cartao img {
+    width: 100%;
+    height: 160px;
+    margin-bottom: var(--margin-b-5) ;
+
+}
+.cartao__img-titulo {
+    font-size: var(--font-sz-8);
+    margin-bottom: var(--margin-b-10);
+}
+
+.cartao-composto .cartao-corpo {
+
+}
+.cartao__serie-bloco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--margin-b-10) ;
+
+}
+.cartao__serie-bloco  i {
+    color: #fff;
+}
+.cartao__serie-texto-serie {
+    color: var(--cor-borda-azul);
+    font-weight: 600;
+    font-size: var(--font-sz-6);
+
+}
+.cartao__serie-texto-legendado {
+    font-size: var(--font-sz-6);
+
+}
+.cartao__serie-texto-dublado {
+    font-size: var(--font-sz-6);
+
+}
+.cartao__descricao {
+    font-size: var(--font-sz-5);
+    font-weight: 400;
+
+} 
+.cartao__descricao-subtitulo {
+    margin-bottom: var(--margin-b-10);
+    line-height: 1.2;
+    font-size: .9rem;
+
+}
+.cartao__btn {
+    width: 100%;
+    background-color: #28b7b0;
+    gap: 5px;
+    padding: 10px 0;
+}
+.cartao-composto .cartao__link {
+  width: 100%;
+
+}
+
+.cartao-composto .cartao__btn-titulo {
+    color: white;
+    font-size: var(--font-sz-6);
+    text-transform: uppercase;
+    font-weight:500;
+}
+
+.cartao-composto .cartao__btn  i {
+    color: white;
+}
+
+

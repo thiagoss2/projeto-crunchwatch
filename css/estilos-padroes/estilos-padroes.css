@@ -1,0 +1,52 @@
+
+/*======================= ESTILOS PADROES ====================== */
+:root {
+    --cor-borda: #343434;
+    --cor-fundo-geral: #181818;
+    --cor-azul: #a9d4e2;
+    --cor-escura: #121212;
+    --cor-vermelha: #cc0000;
+    --cor-icones: #9a9a9a;
+    --cor-botao-escuro: #313131;
+    --cor-icone-teclado: #6e6e6e;
+    --cor-trasparente-botao: #373737;
+    --cor-borda-azul: #2877b3;
+    --cor-textos-fraca: #7c7c7c;
+    --cor-titulo: #9a9a9a;
+    --espaço-esquerdo: 0.25rem;
+    --espaço-direito: 0.25rem;
+    /* TAMANHO DE FONTE MOBILE */
+    /* Essa medida mantem a porporção */
+    --font-sz-1: .4rem;
+    --fonte-sz-2: .5rem;
+    --fonte-sz-3: .6rem;
+    --font-sz-4: .7rem;
+    --font-sz-5: .8rem;
+    --font-sz-6: .9rem;
+    --font-sz-7: 1.2rem;
+    --font-sz-8: 1.5rem;
+    --margin-b-5: 0.3125rem;
+    --margin-b-10: 0.625rem;
+    --margin-b-11:0.800rem;
+    --margin-b-12:1rem;
+    --border-booton-1: 0.0625rem;
+    --border-booton-3: 0.1875rem;
+    --border-booton-5: 0.3125rem;
+    --padding-b: .5rem;
+    --c-gap: 0.625rem;
+  }
+  
+  body {
+      background-color: var(--cor-fundo-geral);
+      font-family: "Roboto", sans-serif;
+  }
+  
+  i {
+      width: 16px;
+      height: 16px;
+  }
+  a {
+      display: inline-block;
+  }
+  /* TAMANHO DE FONTE DESKTOP */
+  /* ALIGN ITENS CENTER : EIXO-Y */

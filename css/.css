@@ -1,0 +1,74 @@
+/* ============= MENU LATERAL FIXO ==================== */
+
+.menu-lateral-fixo {
+    position: absolute;
+    top: 56.78px;
+    width: 100%;
+    background: #034284;
+    z-index: 200;
+    left: -100px;
+    overflow-y: scroll;
+    height: 100vh;
+    padding-bottom: 10rem;
+    /* display: none;   */
+    padding-top: .5rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1mm all ease-in-out;
+
+}
+.menu-lateral-fixo.ativo {
+   visibility: visible;
+   opacity: 1;
+   left: 0;
+}
+
+.secao-menu-lateral__lista {
+    position: relative;
+} 
+ .secao-menu-lateral__lista i {
+       position: absolute;
+       right: 0;  
+       color: red; 
+}
+
+.secao-menu-lateral__item-lista {
+    padding: .6rem 0;
+}
+ 
+.menu-lateral__dropdown {
+    padding-left: .9rem;
+    border-top: 2px solid #fff;
+}
+
+.dropdown__item-lista {
+    padding: .6rem;
+}
+
+.menu-lateral-fixo  .menu-lateral__btn-dropdown{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+
+}
+.menu-lateral__btn-dropdown {
+
+}
+
+.menu-lateral__btn-dropdown-titulo {
+    color: red;
+}
+
+.menu-lateral-fixo a ,  p {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-lateral-fixo i {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+} 
+
+

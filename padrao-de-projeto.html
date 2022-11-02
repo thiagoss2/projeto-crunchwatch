@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- ADICIONA COMPATIBILIDADE COM EDGE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- AJUSTA A TELA A LARGURA DO DISPOSITIVO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/padrao-de-projeto.css">
+
+
+    <!-- FONTE GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Padrao de Projeto</title>
+
+
+</head>
+
+<body>
+    <h1>Padroes de Projeto</h1>
+    <p>Primeiramente antes de criarmos um projeto para uma empresa devemos levar em consideração. O tamanho da fonte,
+        a cor dos textos, espaçamentos tudo tem que ter um padrao e aqui tambem não é diferente
+
+    <p>
+        Primeiro vamos começar pela fonte
+        eu procuro pelo cerviço do google fonts e importo essa fonte no meu documento html atraves da tag link
+
+
+
+        aqui vamos escolher a fonte Roboto
+    </p>
+
+    <img src="/img/google fonts.jpg" alt="">
+    <p> primeiro remova todas as fontes que ja vem padrao</p>
+    <img src="/img/removendo-fonte.jpg" alt="">
+    <p>
+        na busca selecione a fonte desejada </p>
+
+    <img src="/img/fonte-desejada.jpg" alt="">
+    <p>selecione a fonte na caixa de pesquisa</p>
+
+    <img src="/img/caixa-de-fonte.jpg" alt="">
+
+
+    <p>Va adicionando o peso da fonte na seleção peso de fonte selecione todas</p>
+    <img src="/img/seleção-de-fonte.jpg" alt="">
+
+    <p> selecione link na caixa a direita inferior e copie as duas tag link</p>
+
+    <img src="/img/tag-link.jpg" alt="">
+    <p>
+        cole as duas tags dentro da tag head </p>
+        <img src="/img/colando-o-codigo.jpg" alt="">
+
+
+        <p>Agora copie o codigo mais abaixo dos dois links que vc copiou antes e cole no css na tag body que as fontes serao importadas</p>
+        <img src="/img/colando-no-body.jpg" alt="">
+
+        <p>no css</p>
+
+        <img src="/img/codigo-body.jpg" alt="">
+
+        <h2>Padronizando o css</h2>
+
+        <p>
+            Primeiramente devemos importar o arquivo de reset para que os espaçamentos padding margin não atrapalhem na construção da pagina
+            podemos usar o do meyer neste link <a href="https://meyerweb.com/eric/tools/css/reset/">Meyer</a>
+
+            copie o reset e cole no arquivo css assim nossos espaçamentos serao resetados e funcionarao em qualquer navegador
+        </p>
+
+        <img src="/img/codico-reset-css.jpg" alt="">
+
+        <h2>Padronizando Cores Tamanho de fonte e outras coisas</h2>
+        <p>para defnirmos um padrao de fonte cores e ate espaçamentos tudo isso, temos um recurso que é criar variaveis para cor tamanho de fonte que eu gosto muito por sinal
+            que é a classe root, é assim no css voce chama ela atraves dos dois pontos :root {} e tudo que estiver dentro dela podemos chamar no css atravez da   função var();
+
+            no css  <br>
+
+        <code>
+            :root {
+                <br>
+                --nome-da-variavel:tipo-da-variavel <br>
+            }
+        </code>
+
+        <br>
+
+        :root {
+            <br>
+            --cor-fonte-botoes:#fff; <br>
+            --cor-fundo-pagina:#000; <br> <br>
+
+            --tamanho-fonte-1: .5rem <br>
+            --tamanho-fonte-2: .6rem <br>
+            --tamanho-fonte-3: .7rem <br>
+            --tamanho-fonte-4: .8rem <br>
+            --tamanho-fonte-5: .9rem <br>
+            --tamanho-fonte-6: 1rem <br>
+        }
+
+
+        <br> 
+        <p>no css  no mesmo arquivo so chamar</p>
+
+
+            
+
+        h1 {
+            <br>
+            <br>
+            font-size:var(--tamanho-fonte-1); <br>
+        }
+
+       
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
