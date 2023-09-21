@@ -55,9 +55,18 @@ button {
     align-items: center;
 }
 
+button:active {
+	background-color: aqua;
+	text-decoration: none;
+}
+
 a {
     text-decoration: none;
     color: inherit;
+}
+
+a:active {
+	text-decoration: none;
 }
 i {
     color: black;
