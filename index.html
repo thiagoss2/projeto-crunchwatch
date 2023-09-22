@@ -27,19 +27,19 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/reset.css">
   <title>Vide Tube</title>
 
-  
-    <!-- BARRA INFERIOR FIXA -->
-    <link rel="stylesheet" href="css/barra-inferior/barra-inferior-fixa.css">
-    <link rel="stylesheet" href="css/header/cabecalho.css">
-    <link rel="stylesheet" href="css/menu-lateral-fixo/menu-lateral-fixo.css">
-    <link rel="stylesheet" href="css/rodape/rodape.css">
-    <!-- ARQUIVO DE ESTILOS -->
-    <link rel="stylesheet" href="css/index.css">
 
-    
+  <!-- BARRA INFERIOR FIXA -->
+  <link rel="stylesheet" href="css/barra-inferior/barra-inferior-fixa.css">
+  <link rel="stylesheet" href="css/header/cabecalho.css">
+  <link rel="stylesheet" href="css/menu-lateral-fixo/menu-lateral-fixo.css">
+  <link rel="stylesheet" href="css/rodape/rodape.css">
+  <!-- ARQUIVO DE ESTILOS -->
+  <link rel="stylesheet" href="css/index.css">
+
+
 
 </head>
 <!--  1 - A ALTURA DO CONTAINER É O SEU CONTEUDO 
@@ -86,13 +86,13 @@
     </div>
   </header>
 
-  <div class="menu-lateral-fixo " js-menu-lateral-fixo  >
-   <div class="container-1">
-    <section class="secao-menu-lateral">
+  <div class="menu-lateral-fixo " js-menu-lateral-fixo>
+    <div class="container-1">
+      <section class="secao-menu-lateral">
         <ul class="secao-menu-lateral__lista">
           <li class="secao-menu-lateral__item-lista"><a class="secao-menu-lateral__link " href="">Navegar</a>
-            <i class='bx bx-x' js-menu-lateral-fixo-btn-x ></i>
-        </li>
+            <i class='bx bx-x' js-menu-lateral-fixo-btn-x></i>
+          </li>
           <li class="secao-menu-lateral__item-lista"><a class="secao-menu-lateral__link" href="">Novidades</a>
           </li>
           <li class="secao-menu-lateral__item-lista"><a class="secao-menu-lateral__link" href="">A-Z</a></li>
@@ -154,7 +154,7 @@
           </li>
         </ul>
       </section>
-   </div>
+    </div>
 
   </div>
   <!-- =================== CARROSEL ===================================== -->
@@ -366,122 +366,128 @@
           <h2 class="painel-classicos__topo-titulo"> Materias mais lidas</h2>
           <i class='bx bx-chevron-right'></i>
         </section>
-        <a href="painel-classicos__link">
-          <section class="painel-classicos__corpo">
-            <figure class="painel-classicos__bloco-imagem">
-              <img src="img/genishiro-inpact.jpg" alt="Imagem Genishiro-inpact">
-            </figure>
-            <div class="painel-classicos__descricao">
-              <p class="painel-classicos__texto">Gemishiro inpact um jogo de Sobrevivencia eletrizante</p>
-              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
-              </p>
-            </div>
-          </section>
-        </a>
-        <a href="painel-classicos__link">
-          <section class="painel-classicos__corpo">
-            <figure class="painel-classicos__bloco-imagem">
-              <img src="img/dragon-boll.jpeg" alt="Imagem Genishiro-inpact">
-            </figure>
-            <div class="painel-classicos__descricao">
-              <p class="painel-classicos__texto">Dragon Boll Encontre as Esferas do Dragao</p>
-              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
-              </p>
-            </div>
-          </section>
-        </a>
-        <a href="painel-classicos__link">
-          <section class="painel-classicos__corpo">
-            <figure class="painel-classicos__bloco-imagem">
-              <img src="img/orient.jpg" alt="Imagem Genishiro-inpact">
-            </figure>
-            <div class="painel-classicos__descricao">
-              <p class="painel-classicos__texto">Orient um jogo emocionante</p>
-              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
-              </p>
-            </div>
-          </section>
-        </a>
-        <a href="painel-classicos__link">
-          <section class="painel-classicos__corpo">
-            <figure class="painel-classicos__bloco-imagem">
-              <img src="img/doutor-stone.jpeg" alt="Imagem Genishiro-inpact">
-            </figure>
-            <div class="painel-classicos__descricao">
-              <p class="painel-classicos__texto">Doutor Stone explore um mundo primitivo</p>
-              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
-              </p>
-            </div>
-          </section>
-        </a>
+        <div class="painel-classicos-container">
+          <a href="painel-classicos__link">
+            <section class="painel-classicos__corpo">
+              <figure class="painel-classicos__bloco-imagem">
+                <img src="img/genishiro-inpact.jpg" alt="Imagem Genishiro-inpact">
+              </figure>
+              <div class="painel-classicos__descricao">
+                <p class="painel-classicos__texto"><span class="painel-classicos-titulo">Gemishiro inpact</span> um jogo de Sobrevivencia eletrizante</p>
+                <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+                </p>
+              </div>
+            </section>
+          </a>
+          <a href="painel-classicos__link">
+            <section class="painel-classicos__corpo">
+              <figure class="painel-classicos__bloco-imagem">
+                <img src="img/dragon-boll.jpeg" alt="Imagem Genishiro-inpact">
+              </figure>
+              <div class="painel-classicos__descricao">
+                <p class="painel-classicos__texto"><span class="painel-classicos-titulo">Dragon Boll</span> Encontre as Esferas do Dragao</p>
+                <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+                </p>
+              </div>
+            </section>
+          </a>
+          <a href="painel-classicos__link">
+            <section class="painel-classicos__corpo">
+              <figure class="painel-classicos__bloco-imagem">
+                <img src="img/orient.jpg" alt="Imagem Genishiro-inpact">
+              </figure>
+              <div class="painel-classicos__descricao">
+                <p class="painel-classicos__texto"><span class="painel-classicos">Orient</span> um jogo emocionante</p>
+                <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+                </p>
+              </div>
+            </section>
+          </a>
+          <a href="painel-classicos__link">
+            <section class="painel-classicos__corpo">
+              <figure class="painel-classicos__bloco-imagem">
+                <img src="img/doutor-stone.jpeg" alt="Imagem Genishiro-inpact">
+              </figure>
+              <div class="painel-classicos__descricao">
+                <p class="painel-classicos__texto"><span class="painel-classicos-titulo">Doutor Stone</span> explore um mundo primitivo</p>
+                <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+                </p>
+              </div>
+            </section>
+          </a>
+        </div>
       </div>
       <div class="painel-classicos">
         <section class="painel-classicos__topo">
           <h2 class="painel-classicos__topo-titulo">Mais Antigo</h2>
           <i class='bx bx-chevron-right'></i>
         </section>
-        <a href="painel-classicos__link">
-          <section class="painel-classicos__corpo">
-            <figure class="painel-classicos__bloco-imagem">
-              <img src="img/genishiro-inpact.jpg" alt="Imagem Genishiro-inpact">
-            </figure>
-            <div class="painel-classicos__descricao">
-              <p class="painel-classicos__texto">Gemishiro inpact um jogo de Sobrevivencia eletrizante</p>
-              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
-              </p>
-            </div>
-          </section>
-        </a>
-        <a href="painel-classicos__link">
-          <section class="painel-classicos__corpo">
-            <figure class="painel-classicos__bloco-imagem">
-              <img src="img/nagatoro.jpeg" alt="Imagem Genishiro-inpact">
-            </figure>
-            <div class="painel-classicos__descricao">
-              <p class="painel-classicos__texto">As Aventuras de Nagatoro</p>
-              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
-              </p>
-            </div>
-          </section>
-        </a>
-        <a href="painel-classicos__link">
-          <section class="painel-classicos__corpo">
-            <figure class="painel-classicos__bloco-imagem">
-              <img src="img/bclack-sumoner.jpeg" alt="Imagem Genishiro-inpact">
-            </figure>
-            <div class="painel-classicos__descricao">
-              <p class="painel-classicos__texto">Black Sumoner qualidade grafica expetacular</p>
-              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
-              </p>
-            </div>
-          </section>
-        </a>
-        <a href="painel-classicos__link">
-          <section class="painel-classicos__corpo">
-            <figure class="painel-classicos__bloco-imagem">
-              <img src="img/tokyo-revengers.jpeg" alt="Imagem Genishiro-inpact">
-            </figure>
-            <div class="painel-classicos__descricao">
-              <p class="painel-classicos__texto">Tokyo-Revengers so comentam desse anime</p>
-              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
-              </p>
-            </div>
-          </section>
-        </a>
+        <div class="painel-classicos-container">
+          <a href="painel-classicos__link">
+            <section class="painel-classicos__corpo">
+              <figure class="painel-classicos__bloco-imagem">
+                <img src="img/genishiro-inpact.jpg" alt="Imagem Genishiro-inpact">
+              </figure>
+              <div class="painel-classicos__descricao">
+                <p class="painel-classicos__texto"><span class="painel-classicos-titulo">Gemishiro inpact</span> um jogo de Sobrevivencia eletrizante</p>
+                <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+                </p>
+              </div>
+            </section>
+          </a>
+          <a href="painel-classicos__link">
+            <section class="painel-classicos__corpo">
+              <figure class="painel-classicos__bloco-imagem">
+                <img src="img/nagatoro.jpeg" alt="Imagem Genishiro-inpact">
+              </figure>
+              <div class="painel-classicos__descricao">
+                <p class="painel-classicos__texto"><span class="painel-classicos-titulo">As Aventuras de Nagatoro</span></p>
+                <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+                </p>
+              </div>
+            </section>
+          </a>
+          <a href="painel-classicos__link">
+            <section class="painel-classicos__corpo">
+              <figure class="painel-classicos__bloco-imagem">
+                <img src="img/bclack-sumoner.jpeg" alt="Imagem Genishiro-inpact">
+              </figure>
+              <div class="painel-classicos__descricao">
+                <p class="painel-classicos__texto"><span class="painel-classicos-titulo">Black Sumoner</span> qualidade grafica expetacular</p>
+                <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+                </p>
+              </div>
+            </section>
+          </a>
+          <a href="painel-classicos__link">
+            <section class="painel-classicos__corpo">
+              <figure class="painel-classicos__bloco-imagem">
+                <img src="img/tokyo-revengers.jpeg" alt="Imagem Genishiro-inpact">
+              </figure>
+              <div class="painel-classicos__descricao">
+                <p class="painel-classicos__texto"><span class="painel-classicos-titulo">Tokyo-Revengers</span> so comentam desse anime</p>
+                <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+                </p>
+              </div>
+            </section>
+          </a>
+          <a href="painel-classicos__link">
+            <section class="painel-classicos__corpo">
+              <figure class="painel-classicos__bloco-imagem">
+                <img src="img/sem-saida.jpg" alt="Imagem Genishiro-inpact">
+              </figure>
+              <div class="painel-classicos__descricao">
+                <p class="painel-classicos__texto"><span class="painel-classicos-titulo">Sem saida</span>um anime cheio de medo e perigo, voce vai ficar
+                  morrendo de medo</p>
+                <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
+                </p>
+              </div>
+            </section>
+          </a>
 
-        <a href="painel-classicos__link">
-          <section class="painel-classicos__corpo">
-            <figure class="painel-classicos__bloco-imagem">
-              <img src="img/sem-saida.jpg" alt="Imagem Genishiro-inpact">
-            </figure>
-            <div class="painel-classicos__descricao">
-              <p class="painel-classicos__texto">Sem saida um anime cheio de medo e perigo, voce vai ficar
-                morrendo de medo</p>
-              <p class="painel-classicos__texto painel-classicos__texto--fraco ">14 de outubro, de 2022
-              </p>
-            </div>
-          </section>
-        </a>
+        </div>
+
+
       </div>
     </div>
   </div>
@@ -614,95 +620,91 @@
   </div>
   <footer class="rodape">
     <div class="container-1">
-        <section class="rodape-secao">
-            <h3 class="rodape-secao__titulo">Navegação</h3>
-            <ul class="lista-animes">
-                <li class="lista__item"><a href="" class="lista__link">Series Populares</a></li>
-                <li class="lista__item"><a href="" class="lista__link">Series em Simulcats</a></li>
-                <li class="lista__item"><a href="" class="lista__link">Ler Manga</a></li>
-                <li class="lista__item"><a href="" class="lista__link">Calendario de Lançamentos</a></li>
-                <li class="lista__item"><a href="" class="lista__link">Noticias</a></li>
-                <li class="lista__item"><a href="" class="lista__link">Forum</a></li>
-                <li class="lista__item"><a href="" class="lista__link">Jogos</a></li>
-            </ul>
-        </section>
-        <section class="rodape-secao">
-            <h3 class="rodape-secao__titulo">Contate-nos</h3>
-            <ul class="lista-animes">
-                <li class="lista__item"><a href="" class="lista__link"><i class='bx bx-video'></i> Yotube</a></li>
-                <li class="lista__item"><a href="" class="lista__link"><i class='bx bxl-facebook'></i> Facebook</a>
-                </li>
-                <li class="lista__item"><a href="" class="lista__link"><i class='bx bxl-twitter'></i> Twitter</a>
-                </li>
-                <li class="lista__item"><a href="" class="lista__link"><i class='bx bxl-instagram'></i>
-                        Instagram</a></li>
-            </ul>
-        </section>
+      <section class="rodape-secao">
+        <h3 class="rodape-secao__titulo">Navegação</h3>
+        <ul class="lista-animes">
+          <li class="lista__item"><a href="" class="lista__link">Series Populares</a></li>
+          <li class="lista__item"><a href="" class="lista__link">Series em Simulcats</a></li>
+          <li class="lista__item"><a href="" class="lista__link">Ler Manga</a></li>
+          <li class="lista__item"><a href="" class="lista__link">Calendario de Lançamentos</a></li>
+          <li class="lista__item"><a href="" class="lista__link">Noticias</a></li>
+          <li class="lista__item"><a href="" class="lista__link">Forum</a></li>
+          <li class="lista__item"><a href="" class="lista__link">Jogos</a></li>
+        </ul>
+      </section>
+      <section class="rodape-secao">
+        <h3 class="rodape-secao__titulo">Contate-nos</h3>
+        <ul class="lista-animes">
+          <li class="lista__item"><a href="" class="lista__link"><i class='bx bx-video'></i> Yotube</a></li>
+          <li class="lista__item"><a href="" class="lista__link"><i class='bx bxl-facebook'></i> Facebook</a>
+          </li>
+          <li class="lista__item"><a href="" class="lista__link"><i class='bx bxl-twitter'></i> Twitter</a>
+          </li>
+          <li class="lista__item"><a href="" class="lista__link"><i class='bx bxl-instagram'></i>
+              Instagram</a></li>
+        </ul>
+      </section>
 
-        <section class="rodape-secao">
-            <h3 class="rodape-secao__titulo">Vide Tube</h3>
-            <ul class="lista-animes">
-                <li class="lista__item"><a href="" class="lista__link">Sobre</a></li>
-                <li class="lista__item"><a href="" class="lista__link">Ajuda/FAQ</a></li>
-                <li class="lista__item"><a href="" class="lista__link">Termos de Uso</a></li>
-                <li class="lista__item"><a href="" class="lista__link">Politica de Privacidade</a></li>
-                <li class="lista__item"><a href="" class="lista__link">Ferramenta de Cookies</a></li>
-                <li class="lista__item"><a href="" class="lista__link">Solicitaçoes de Imprensa</a></li>
-                <li class="lista__item"><a href="" class="lista__link">Baixe o App</a></li>
-                <li class="lista__item"><a href="" class="lista__link">Resgatar Código</a></li>
-                <li class="lista__item"><a href="" class="lista__link">Vagas</a></li>
-            </ul>
+      <section class="rodape-secao">
+        <h3 class="rodape-secao__titulo">Vide Tube</h3>
+        <ul class="lista-animes">
+          <li class="lista__item"><a href="" class="lista__link">Sobre</a></li>
+          <li class="lista__item"><a href="" class="lista__link">Ajuda/FAQ</a></li>
+          <li class="lista__item"><a href="" class="lista__link">Termos de Uso</a></li>
+          <li class="lista__item"><a href="" class="lista__link">Politica de Privacidade</a></li>
+          <li class="lista__item"><a href="" class="lista__link">Ferramenta de Cookies</a></li>
+          <li class="lista__item"><a href="" class="lista__link">Solicitaçoes de Imprensa</a></li>
+          <li class="lista__item"><a href="" class="lista__link">Baixe o App</a></li>
+          <li class="lista__item"><a href="" class="lista__link">Resgatar Código</a></li>
+          <li class="lista__item"><a href="" class="lista__link">Vagas</a></li>
+        </ul>
 
-        </section>
+      </section>
 
-        <section class="rodape-secao">
-            <h3 class="rodape-secao__titulo">&COPY; Ellation, LLC</h3>
-            <button class="rodape-secao__btn-caixa">
-                <p class="rodape-secao__btn-texto">portugues(brasil)</p>
-            </button>
-            <!-- position-fixed -->
-            <div class="dropdown-idiomas">
-                <div class="dropdown-topo">
-                    <h2 class="dropdown-topo__titulo"> idioma</h2>
-                    <div class="dropdown-topo__btn-x-caixa">
-                        <i class='bx bx-x'></i>
-                    </div>
-                </div>
-                <ul class="dropdown-idiomas__lista">
-                    <li class="dropdown-idiomas__item-lista"><a href="" class="dropdown-idiomas__link">Deutsch</a>
-                    </li>
-                    <li class="dropdown-idiomas__item-lista"><a href=""
-                            class="dropdown-idiomas__link">English(US)</a></li>
-                    <li class="dropdown-idiomas__item-lista"><a href="" class="dropdown-idiomas__link">Espanhol</a>
-                    </li>
-                    <li class="dropdown-idiomas__item-lista"><a href=""
-                            class="dropdown-idiomas__link">Espanhol(Espana)</a></li>
-                    <li class="dropdown-idiomas__item-lista"><a href=""
-                            class="dropdown-idiomas__link">Frances(France)</a></li>
-                    <li class="dropdown-idiomas__item-lista"><a href="" class="dropdown-idiomas__link">Italiano</a>
-                    </li>
-                    <li class="dropdown-idiomas__item-lista"><a href=""
-                            class="dropdown-idiomas__link">Portuges(Brasil)</a></li>
-                    <li class="dropdown-idiomas__item-lista"><a href=""
-                            class="dropdown-idiomas__link">Portugês(Portugal)</a></li>
-                </ul>
+      <section class="rodape-secao">
+        <h3 class="rodape-secao__titulo">&COPY; Ellation, LLC</h3>
+        <button class="rodape-secao__btn-caixa">
+          <p class="rodape-secao__btn-texto">portugues(brasil)</p>
+        </button>
+        <!-- position-fixed -->
+        <div class="dropdown-idiomas">
+          <div class="dropdown-topo">
+            <h2 class="dropdown-topo__titulo"> idioma</h2>
+            <div class="dropdown-topo__btn-x-caixa">
+              <i class='bx bx-x'></i>
             </div>
-        </section>
+          </div>
+          <ul class="dropdown-idiomas__lista">
+            <li class="dropdown-idiomas__item-lista"><a href="" class="dropdown-idiomas__link">Deutsch</a>
+            </li>
+            <li class="dropdown-idiomas__item-lista"><a href="" class="dropdown-idiomas__link">English(US)</a></li>
+            <li class="dropdown-idiomas__item-lista"><a href="" class="dropdown-idiomas__link">Espanhol</a>
+            </li>
+            <li class="dropdown-idiomas__item-lista"><a href="" class="dropdown-idiomas__link">Espanhol(Espana)</a></li>
+            <li class="dropdown-idiomas__item-lista"><a href="" class="dropdown-idiomas__link">Frances(France)</a></li>
+            <li class="dropdown-idiomas__item-lista"><a href="" class="dropdown-idiomas__link">Italiano</a>
+            </li>
+            <li class="dropdown-idiomas__item-lista"><a href="" class="dropdown-idiomas__link">Portuges(Brasil)</a></li>
+            <li class="dropdown-idiomas__item-lista"><a href="" class="dropdown-idiomas__link">Portugês(Portugal)</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
 
 
 
-  <!-- BOX ICONS -->
-  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- BOX ICONS -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
-  <!-- BOOTSTRAP -->
+    <!-- BOOTSTRAP -->
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"></script>
 
     <script src="js/index.js">
 

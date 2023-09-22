@@ -222,6 +222,17 @@ main {
   color: white;
   font-weight: bold;
 }
+
+@media screen and (min-width:600px) {
+
+  .painel-classicos-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 10px;
+  }
+
+}
+
 .painel-classicos__topo-titulo {
   font-size: 1.2rem;
   color: white;
@@ -248,7 +259,19 @@ main {
   margin-bottom: 0;
   margin-bottom: var(--margin-b-10);
   line-height: 1.5;
+  text-transform: capitalize;
 }
+
+.painel-classicos-titulo {
+  display: block;
+  text-transform: uppercase ;
+  margin-bottom: 3px;
+  font-weight: 600;
+  color: var(--cor-borda-azul);
+}
+
+
+
 .painel-classicos__texto--fraco {
   color: #6e6e6e;
   font-weight: bold;
