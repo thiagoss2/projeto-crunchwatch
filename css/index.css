@@ -323,6 +323,16 @@ main {
 
 }
 
+
+.cartao-composto .cartao figure {
+
+  width: 40%;
+
+
+}  
+
+
+
 .cartao-composto .cartao img {
     width: 100%;
     height: 160px;

@@ -5,6 +5,12 @@ const menuLateralFixo = document.querySelector('[js-menu-lateral-fixo]');
 const menuLateralFixoBtnX = document.querySelector('[js-menu-lateral-fixo-btn-x]');
 
 
+// BLOCO DROPDOWN EPISODEOS
+const episodeosDescricaoBloco = document.querySelector('[js-episodeos-descricao-media]');
+const  dropdownepisodeosDescricao = document.querySelector('[js-episodeos-descricao-dropdown]');
+
+
+
 
 const menuLateralFixoOculto = function() {
     menuLateralFixo.classList.toggle("ativo");
@@ -20,10 +26,6 @@ menuLateralFixoBtnX.addEventListener('click' , menuLateralFixoOculto );
 
 //  elemento.onClick = funcaoQueSeraExecutada();
 
-
-// BLOCO DROPDOWN EPISODEOS
-const episodeosDescricaoBloco = document.querySelector('[js-episodeos-descricao-media]');
-const  dropdownepisodeosDescricao = document.querySelector('[js-episodeos-descricao-dropdown]');
 
 episodeosDescricaoBloco.addEventListener('click', function () {
     dropdownepisodeosDescricao.classList.toggle("ativo")

@@ -24,6 +24,21 @@
 
 }
 
+
+
+.rodape-secao__titulo {
+
+}
+
+
+.rodape-secao__btn-texto {
+    text-align: left;
+
+}
+
+
+
+
 .lista-animes {
     grid-column: 2/2;
     font-size: .8rem;
@@ -84,6 +99,7 @@
 .dropdown-idiomas__lista {
     padding:  5% 0 0 5% ;
 }
+
 
 .dropdown-idiomas__item-lista {
     padding-top: 1rem;
