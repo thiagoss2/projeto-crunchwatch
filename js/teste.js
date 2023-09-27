@@ -19,12 +19,22 @@
 
 let cpf = "111444777";
 
-// retorna um array de cpf
+// a função separaOsDigitosDocpf retorna um array de String
 
 let separador = separaOsDigitosDoCpf(cpf);
 
 let multiplicador = multiplicaOsDigitosDoCpfEmOrdemDecrescente(separador);
 
+let soma = somaDigitosDoCpf(multiplicador);
+
+
+let digitoVerificadorEncontrado  = adicionaODigitoVerificador(soma, separador) 
+
+console.log(soma);
+
+console.log(separador);
+
+console.log(digitoVerificadorEncontrado);
 
 
 
@@ -105,23 +115,22 @@ function somaDigitosDoCpf(multiplicador) {
 function adicionaODigitoVerificador(soma, separador) {
 
 
-
    let digitoEncontrado = 11;
 
-   digitoDecrecente = somaDigitosDoCpf(cpf);
+   let somaDosDigitosDecrescente = soma;
 
-   let calculo = digitoDecrecente % 11;
+   let calculo = somaDosDigitosDecrescente % 11;
 
    if (calculo < 2) {
       digitoEncontrado = 0;
-      cpfSeparado.push(digitoEncontrado);
+      separador.push(digitoEncontrado);
 
-      return cpfSeparado;
+      return separador;
 
    } else if (calculo >= 2) {
       let result = digitoEncontrado - calculo;
-      cpfSeparado.push(result);
-      return cpfSeparado;
+      separador.push(result);
+      return separador;
 
    }
 
