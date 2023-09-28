@@ -11,6 +11,8 @@
 
    4 passo - retornar o digito verificador
 
+   5 passo - retornar o segundo digito verificador
+
    fonte  site https://www.macoratti.net/alg_cpf.htm
 */
 
@@ -28,7 +30,7 @@ let multiplicador = multiplicaOsDigitosDoCpfEmOrdemDecrescente(separador);
 let soma = somaDigitosDoCpf(multiplicador);
 
 
-let digitoVerificadorEncontrado  = adicionaODigitoVerificador(soma, separador) 
+let digitoVerificadorEncontrado = adicionaODigitoVerificador(soma, separador) 
 
 console.log(soma);
 
