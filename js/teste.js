@@ -3,7 +3,7 @@
 
 /*
    
-   1 passo - Separar todos os dogitos do cpf
+   1 passo - Separar todos os digitos do cpf
 
    2 passo - Multiplicar cada um dos numeros da direita para esquerda
 
@@ -13,30 +13,59 @@
 
    5 passo - retornar o segundo digito verificador
 
+   6 passo - comparar os dois digitos verificadores se correpondem ao calculo adiciona digito verificador
+
    fonte  site https://www.macoratti.net/alg_cpf.htm
 */
 
 
 
+pegaOUltimoNumero("456");
 
-let cpf = "111444777";
+
+function pegaOUltimoNumero(numero) {
+
+            
+   let ultimoNumeroIndice = numero.length - 1; 
+
+   let   pegaOUltimoElemento = 0;
+
+   for(let i = numero.length - 1 ; i >= 0 ; i-- ) {
+
+       pegaOUltimoElemento = numero[ultimoNumeroIndice];
+      
+
+   }
+      console.log(pegaOUltimoElemento);
+     return pegaOUltimoElemento;
+
+}
+
+
+
+ 
+function validadorDeCpf(cpf) {
+
+    
 
 // a função separaOsDigitosDocpf retorna um array de String
 
-let separador = separaOsDigitosDoCpf(cpf);
+let s = separaOsDigitosDoCpf(cpf);
+let mu = multiplicaOsDigitosDoCpfEmOrdemDecrescente(s);
+let soma = somaDigitosDoCpf(mu);
+let dig = adicionaODigitoVerificador(soma, s);
 
-let multiplicador = multiplicaOsDigitosDoCpfEmOrdemDecrescente(separador);
 
-let soma = somaDigitosDoCpf(multiplicador);
+// dig2 é o cpf com o primeiro digito adicionado
+let dig2 = dig;
+let mu2 = multiplicaOsDigitosDoCpfEmOrdemDecrescente(dig2);
+let soma2 = somaDigitosDoCpf(mu2);
+let cpfComDigVerificador = adicionaODigitoVerificador(soma2 , dig2 );
 
 
-let digitoVerificadorEncontrado = adicionaODigitoVerificador(soma, separador) 
 
-console.log(soma);
+}
 
-console.log(separador);
-
-console.log(digitoVerificadorEncontrado);
 
 
 
@@ -86,10 +115,15 @@ function separaOsDigitosDoCpf(cpf) {
    for (let i = 0; i < cpf.length; i++) {
 
       novaString[i] = cpf[i];
+      console.log(novaString[i]);
 
 
    }
+
+   console.log(novaString);
    return novaString;
+
+   
 
 }
 
@@ -99,6 +133,8 @@ function separaOsDigitosDoCpf(cpf) {
 function somaDigitosDoCpf(multiplicador) {
 
    let soma = 0;
+
+
 
    for (let i = 0 ;  i < multiplicador.length ;  i++) {
 
@@ -126,7 +162,6 @@ function adicionaODigitoVerificador(soma, separador) {
    if (calculo < 2) {
       digitoEncontrado = 0;
       separador.push(digitoEncontrado);
-
       return separador;
 
    } else if (calculo >= 2) {
