@@ -349,11 +349,38 @@ main {
 
 .cartao-composto .cartao figure {
 
-  width: 40%;
+  width: 100%;
 
 
 }  
 
+
+@media screen and (min-width:480px) {
+
+.cartao-composto .cartao {
+  display: flex;
+  gap: 20px;
+}
+
+
+.cartao-composto .cartao figure {
+
+  width: 30%;
+
+
+}  
+
+
+.cartao-composto .cartao figure img {
+
+  
+ object-fit: cover;
+
+}  
+
+
+
+}
 
 
 .cartao-composto .cartao img {
