@@ -19,111 +19,148 @@
 */
 
 
+let  boleano = validadorDeCpf("111444777");
 
-pegaOUltimoNumero("456");
+console.log(boleano);
+
+function validadorDeCpf(cpf) {
+
+  
+
+ // a função separaOsDigitosDocpf retorna um array de String
+ 
+ let s = separaOsDigitosDoCpf(cpf);
+ let mu = multiplicaOsDigitosDoCpfEmOrdemDecrescente(s);
+ let soma = somaDigitosDoCpf(mu);
+ let dig = adicionaODigitoVerificador(soma, s);
+ let penultimoNumero = pegaOPenultimoNumero(dig);
+
+
+ 
+ 
+ // dig2 é o cpf com o primeiro digito adicionado
+ let dig2 = dig;
+ let mu2 = multiplicaOsDigitosDoCpfEmOrdemDecrescente(dig2);
+ let soma2 = somaDigitosDoCpf(mu2);
+ let cpfComDigVerificador = adicionaODigitoVerificador(soma2 , dig2 );
+ 
+
+let result = soma % 11;
+
+if( result < 2 ) {
+
+  return false
+
+} else  {
+  return true;
+}
+ 
+
+}
+
+function pegaOPenultimoNumero(numero) {
+
+          
+ let indice = numero.length - 2; 
+
+ let penultimoNumero = 0;
+
+ for(let i = numero.length - 1 ; i >= 0 ; i-- ) {
+
+     penultimoNumero = numero[indice];
+    
+
+ }
+   
+
+   return penultimoNumero;
+
+}
+
+
 
 
 function pegaOUltimoNumero(numero) {
 
-            
-   let ultimoNumeroIndice = numero.length - 1; 
+          
+ let ultimoNumeroIndice = numero.length - 1; 
 
-   let   pegaOUltimoElemento = 0;
+ let   pegaOUltimoElemento = 0;
 
-   for(let i = numero.length - 1 ; i >= 0 ; i-- ) {
+ for(let i = numero.length - 1 ; i >= 0 ; i-- ) {
 
-       pegaOUltimoElemento = numero[ultimoNumeroIndice];
-      
-
-   }
-      console.log(pegaOUltimoElemento);
-     return pegaOUltimoElemento;
-
-}
-
-
-
- // teste
-function validadorDeCpf(cpf) {
-
+     pegaOUltimoElemento = numero[ultimoNumeroIndice];
     
 
-// a função separaOsDigitosDocpf retorna um array de String
+ }
+   
 
-let s = separaOsDigitosDoCpf(cpf);
-let mu = multiplicaOsDigitosDoCpfEmOrdemDecrescente(s);
-let soma = somaDigitosDoCpf(mu);
-let dig = adicionaODigitoVerificador(soma, s);
-
-
-// dig2 é o cpf com o primeiro digito adicionado
-let dig2 = dig;
-let mu2 = multiplicaOsDigitosDoCpfEmOrdemDecrescente(dig2);
-let soma2 = somaDigitosDoCpf(mu2);
-let cpfComDigVerificador = adicionaODigitoVerificador(soma2 , dig2 );
-
-
+   return pegaOUltimoElemento;
 
 }
+
+
+
+
 
 
 
 
 function removerCaracteresEspeciais(str) {
-   let novaStr = "";
-   for (let i = 0; i < str.length; i++) {
-      let caractere = str[i];
-      if (caractere.match(/^[a-zA-Z0-9 ]$/)) {
-         novaStr += caractere;
-      }
-   }
-   return novaStr;
+ let novaStr = "";
+ for (let i = 0; i < str.length; i++) {
+    let caractere = str[i];
+    if (caractere.match(/^[a-zA-Z0-9 ]$/)) {
+       novaStr += caractere;
+    }
+ }
+ return novaStr;
 }
 
 function calculaOPrimeiroDigitoVerificador(cpf) {
 
 
-   let novaString = [];
-   let contadorDecrecente = cpf.length - 1;
-   let multiplicador = 2;
-   let valorTemporario = 0;
+ let novaString = [];
+ let contadorDecrecente = cpf.length - 1;
+ let multiplicador = 2;
+ let valorTemporario = 0;
 
-   for (let i = 0; i < cpf.length; i++) {
-      // pega a ultima posição do array e guarda na variavel 
-      let digito = cpf[contadorDecrecente];
+ for (let i = 0; i < cpf.length; i++) {
+    // pega a ultima posição do array e guarda na variavel 
+    let digito = cpf[contadorDecrecente];
 
-      valorTemporario = multiplicador * digito;
+    valorTemporario = multiplicador * digito;
 
-      novaString.push(valorTemporario);
-
-
-
-      contadorDecrecente = contadorDecrecente - 1;
-      multiplicador = multiplicador + 1;
+    novaString.push(valorTemporario);
 
 
-   }
-   return novaString;
+
+    contadorDecrecente = contadorDecrecente - 1;
+    multiplicador = multiplicador + 1;
+
+
+ }
+ return novaString;
 
 }
 
 
 
 function separaOsDigitosDoCpf(cpf) {
-   let novaString = [];
+ let novaString = [];
 
-   for (let i = 0; i < cpf.length; i++) {
+ for (let i = 0; i < cpf.length; i++) {
 
-      novaString[i] = cpf[i];
-      console.log(novaString[i]);
+    novaString[i] = cpf[i];
+  
 
 
-   }
+ }
 
-   console.log(novaString);
-   return novaString;
 
-   
+ return novaString;
+
+ 
 
 }
 
@@ -132,17 +169,17 @@ function separaOsDigitosDoCpf(cpf) {
 // a função recebe um array de inteiros  somaDigitosDoCpf( int[] multiplicador )  
 function somaDigitosDoCpf(multiplicador) {
 
-   let soma = 0;
+ let soma = 0;
 
 
 
-   for (let i = 0 ;  i < multiplicador.length ;  i++) {
+ for (let i = 0 ;  i < multiplicador.length ;  i++) {
 
-      let valorTemporario = multiplicador[i];
+    let valorTemporario = multiplicador[i];
 
-      soma = soma + valorTemporario;
-   }
-   return soma;
+    soma = soma + valorTemporario;
+ }
+ return soma;
 
 
 }
@@ -153,23 +190,23 @@ function somaDigitosDoCpf(multiplicador) {
 function adicionaODigitoVerificador(soma, separador) {
 
 
-   let digitoEncontrado = 11;
+ let digitoEncontrado = 11;
 
-   let somaDosDigitosDecrescente = soma;
+ let somaDosDigitosDecrescente = soma;
 
-   let calculo = somaDosDigitosDecrescente % 11;
+ let calculo = somaDosDigitosDecrescente % 11;
 
-   if (calculo < 2) {
-      digitoEncontrado = 0;
-      separador.push(digitoEncontrado);
-      return separador;
+ if (calculo < 2) {
+    digitoEncontrado = 0;
+    separador.push(digitoEncontrado);
+    return separador;
 
-   } else if (calculo >= 2) {
-      let result = digitoEncontrado - calculo;
-      separador.push(result);
-      return separador;
+ } else if (calculo >= 2) {
+    let result = digitoEncontrado - calculo;
+    separador.push(result);
+    return separador;
 
-   }
+ }
 
 
 }
@@ -181,27 +218,27 @@ function adicionaODigitoVerificador(soma, separador) {
 
 function multiplicaOsDigitosDoCpfEmOrdemDecrescente(separador) {
 
-   let multiplicador = 2;
-   let novoNumero = [];
+ let multiplicador = 2;
+ let novoNumero = [];
 
-   for (let i = separador.length - 1 ; i >= 0 ; i--) {
+ for (let i = separador.length - 1 ; i >= 0 ; i--) {
 
-      // pega o conteudo da ultima posição do array e vai descendo 
-      let digito = separador[i];
+    // pega o conteudo da ultima posição do array e vai descendo 
+    let digito = separador[i];
 
-      // multiplica cada digito 
-      let result = multiplicador * digito;
+    // multiplica cada digito 
+    let result = multiplicador * digito;
 
-      // guarda o valor multiplicado em um novo array
-      novoNumero[i] = result;
+    // guarda o valor multiplicado em um novo array
+    novoNumero[i] = result;
 
 
-      // a cada repitição do laço o multiplicador recebe +1
-      multiplicador++;
+    // a cada repitição do laço o multiplicador recebe +1
+    multiplicador++;
 
-   }
+ }
 
-   // retorna o novo array com os valores multiplicados
-   return novoNumero;
+ // retorna o novo array com os valores multiplicados
+ return novoNumero;
 
 }
